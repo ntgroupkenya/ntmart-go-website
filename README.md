@@ -77,4 +77,4 @@ Every colour is a CSS variable at the top of `assets/css/main.css`, so a new sch
 - **Forms:** add `data-ajax` to a `<form>` for validation (`required`, `type="email"`, `pattern`, `minlength`) and submission with `fetch`. The handler must return JSON `{ "ok": true|false, "message": "..." }`. A `<select data-prefill>` is filled from the query string, for example `contact.html?topic=preview`.
 - **Menu:** the same menu markup is in every page. When you add a page, update both the desktop nav and `#mobile-menu`.
 
-All behaviour is in `assets/js/main.js`, which is loaded on every page. Fonts come from Google Fonts (Nunito) and icons from [Material Design Icons](https://pictogrammers.com/library/mdi/) (`<i class="mdi mdi-NAME"></i>`).
+All behaviour is in `assets/js/main.js`, which is loaded on every page. The font is [Clear Sans](https://github.com/intel/clear-sans), self-hosted in `assets/fonts/clear-sans/` (Apache 2.0, licence included). Icons come from [Material Design Icons](https://pictogrammers.com/library/mdi/) (`<i class="mdi mdi-NAME"></i>`).
