@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NTmart POS Go</title>
-  <meta name="description" content="NTmart POS Go: a native Windows point of sale that runs on your existing NTmart database. No data migration, side by side with the PHP edition.">
+  <meta name="description" content="NTmart POS Go: fast, reliable point of sale for Kenyan shops. Sell, track stock, invoice clients and keep your books in one Windows app.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -13,109 +13,118 @@
 
   <div id="header">
     <h1><a href="index.html">NTmart POS Go</a></h1>
-    <p>A native Windows point of sale for NTmart shops</p>
+    <p>Point of sale, stock and accounts for Kenyan shops</p>
   </div>
 
   <div id="nav">
     <a class="current" href="index.html">Home</a><span class="sep">|</span>
-    <a href="#features">Features</a><span class="sep">|</span>
-    <a href="#roadmap">Roadmap</a><span class="sep">|</span>
-    <a href="#faq">FAQ</a><span class="sep">|</span>
-    <a href="getting-started.html">Get started</a>
+    <a href="features.html">Features</a><span class="sep">|</span>
+    <a href="contact.html">Contact</a>
+    <span class="nav-cta"><a class="button" href="contact.html">Book a demo</a></span>
+  </div>
+
+  <div class="hero">
+    <div class="hero-cols">
+      <div>
+        <h2>Sell faster. Know your stock. Keep your books straight.</h2>
+        <p class="tagline">NTmart POS Go runs your till, your stock room and your accounts from one fast Windows app. Every sale updates stock and the books on its own, so you spend less time counting and more time selling.</p>
+        <div class="actions">
+          <a class="button button-big" href="contact.html">Book a free demo</a>
+          <a class="button button-alt button-big" href="features.html">See all features</a>
+        </div>
+        <ul class="checks">
+          <li>Cash, M-Pesa and split payments</li>
+          <li>VAT worked out for you</li>
+          <li>Thermal receipt printing</li>
+        </ul>
+      </div>
+      <div>
+        <div class="receipt" role="img" aria-label="Example receipt printed by NTmart POS Go">
+          <div class="c"><b>YOUR SHOP NAME</b><br>Nairobi<br>PIN: P000000000X</div>
+          <div class="rule"></div>
+          <div class="row"><span>Maize flour 2kg x2</span><span>380.00</span></div>
+          <div class="row"><span>Cooking oil 1L</span><span>345.00</span></div>
+          <div class="row"><span>Sugar 1kg x1.5</span><span>247.50</span></div>
+          <div class="row"><span>Bread 400g</span><span>65.00</span></div>
+          <div class="rule"></div>
+          <div class="row"><b>TOTAL</b><b>1,037.50</b></div>
+          <div class="row"><span>VAT 16% incl.</span><span>143.10</span></div>
+          <div class="row"><span>M-PESA</span><span>1,037.50</span></div>
+          <div class="rule"></div>
+          <div class="c">Thank you for shopping with us!</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="content">
 
-    <div class="notice">
-      <b>Note:</b> NTmart POS Go is a <b>preview edition</b>. It runs alongside the NTmart PHP edition and is not yet for use at client shops.
-    </div>
-
-    <div class="columns">
-      <div class="main">
-        <h2>Welcome</h2>
-        <p class="intro">NTmart POS Go is a rewrite of NTmart POS as a native Windows app. It runs on the <b>same MySQL/MariaDB database</b> you already have, so nothing moves and nothing gets lost.</p>
-        <p>The Go edition reads and writes the existing NTmart tables exactly as the PHP edition does. Shops can move over one screen at a time, with both editions running at once on the same data.</p>
-        <p><a href="getting-started.html">Read the getting started guide &raquo;</a></p>
+    <h2>Everything your shop runs on, in one place</h2>
+    <div class="three">
+      <div class="box">
+        <h3>A quick, simple till</h3>
+        <p>Scan or search, take cash or M-Pesa, split a bill, hold a sale and come back to it. Price levels, loyalty points and voids are all built in.</p>
       </div>
-
-      <div class="side">
-        <div class="box">
-          <h3>At a glance</h3>
-          <ul>
-            <li>Windows desktop app</li>
-            <li>MySQL / MariaDB</li>
-            <li>Uses your existing NTmart users</li>
-            <li>ESC/POS thermal receipts</li>
-            <li>Built with Go</li>
-          </ul>
-        </div>
+      <div class="box">
+        <h3>Stock you can trust</h3>
+        <p>Every sale and purchase updates stock straight away. Run stock takes, move goods between branches and store rooms, and see what you have, where.</p>
+      </div>
+      <div class="box">
+        <h3>Books that balance</h3>
+        <p>Sales, purchases, expenses and payments post to your accounts as you work. Pull up profit, VAT and balance sheet reports any time.</p>
+      </div>
+      <div class="box">
+        <h3>Sell on credit</h3>
+        <p>Issue invoices and quotations, take part payments and send clear statements. Always know who owes you and how much.</p>
+      </div>
+      <div class="box">
+        <h3>Buy from suppliers</h3>
+        <p>Raise purchase orders, receive goods, return items and pay suppliers by cash, bank or cheque, with a full record of what you owe.</p>
+      </div>
+      <div class="box">
+        <h3>Control who does what</h3>
+        <p>Give each cashier and manager their own login and only the permissions they need. The activity log shows who did what, and when.</p>
       </div>
     </div>
+    <p><a href="features.html">See the full feature list &raquo;</a></p>
 
-    <h2>Why the Go edition?</h2>
-    <ul>
-      <li><b>No data migration.</b> Your products, clients, sales and accounts are already where the Go app looks for them.</li>
-      <li><b>Side by side with PHP.</b> Use Go for the finished screens and PHP for the rest, on the same data, at the same time.</li>
-      <li><b>Checked against PHP.</b> Each module runs the same actions as PHP and compares the rows written. VAT matches to six decimal places and receipts match byte for byte.</li>
-      <li><b>Exact money.</b> Every amount and quantity uses exact decimals. Multi-step writes run in one transaction and are safe to retry.</li>
-    </ul>
-
-    <h2 id="features">Features</h2>
+    <h2>Built for shops like yours</h2>
     <table>
-      <tr><th>Module</th><th>What it covers</th></tr>
-      <tr><td><b>POS register</b></td><td>Price tiers, minimum prices, fractional selling, split payments, held sales, custom items, voids, loyalty points and cash drawer sessions.</td></tr>
-      <tr><td><b>Receipts</b></td><td>Raw ESC/POS printing on 80mm and 58mm thermal printers, with four receipt formats, your logo and barcodes.</td></tr>
-      <tr><td><b>Stock</b></td><td>Product editor, adjustments, stock takes, transfers between locations, product groups and price lists.</td></tr>
-      <tr><td><b>Buying</b></td><td>Suppliers, purchases, purchase orders, returns, and supplier payments with allocations and cheques.</td></tr>
-      <tr><td><b>Selling on account</b></td><td>Clients, invoices, quotations, credit notes, payments received, cheques, contra, and client and supplier statements.</td></tr>
-      <tr><td><b>Accounts &amp; reports</b></td><td>Chart of accounts, journals, expenses and incomes, bank lines, VAT withholding, staff commission and 28 reports with CSV export.</td></tr>
-      <tr><td><b>Team &amp; settings</b></td><td>Your existing user accounts, team permissions, an activity log, payment methods and shop settings.</td></tr>
-      <tr><td><b>Extras</b></td><td>Lay-bys, job cards, serial numbers and warranty claims, stock loans, and recipes with production.</td></tr>
+      <tr><th>Your business</th><th>How NTmart POS Go helps</th></tr>
+      <tr><td><b>Supermarkets &amp; mini-marts</b></td><td>Fast checkout, barcode scanning, items sold by weight, loyalty points and cash-up at the end of each shift.</td></tr>
+      <tr><td><b>Wholesalers &amp; distributors</b></td><td>Price levels for retail and wholesale customers, invoices on credit, client statements and stock across several locations.</td></tr>
+      <tr><td><b>Hardware &amp; electronics</b></td><td>Serial numbers, warranty claims, job cards for repairs and lay-by for customers paying over time.</td></tr>
+      <tr><td><b>Bakeries &amp; kitchens</b></td><td>Recipes and production runs, so making a batch uses up the ingredients and adds the finished goods to stock.</td></tr>
     </table>
 
-    <h2 id="roadmap">Roadmap</h2>
-    <p>The Go edition is moving over module by module. It stays a preview until Phase 8 is done.</p>
-    <table>
-      <tr><th>Phase</th><th>Scope</th><th>Status</th></tr>
-      <tr><td>1</td><td>Foundation: database connection, sign-in with your existing users, main window, catalogue browser</td><td class="status-done">Done</td></tr>
-      <tr><td>2</td><td>POS register and receipts: pricing and tax, split payments, stock and ledger postings, held sales, voids, loyalty, cash drawer, eTIMS queueing, ESC/POS receipts (QR codes to come)</td><td class="status-done">Done</td></tr>
-      <tr><td>3</td><td>Stock: editor, adjustments, stock take, transfers, locations, groups, price lists (bulk editing and CSV import next)</td><td class="status-done">Core done</td></tr>
-      <tr><td>4</td><td>Buying: purchases, purchase orders, returns, supplier payments and cheques (purchase printing next)</td><td class="status-done">Done</td></tr>
-      <tr><td>5</td><td>Selling on account: invoices, quotations, credit notes, payments received, statements (invoice printing and PDF next)</td><td class="status-done">Done</td></tr>
-      <tr><td>6</td><td>Accounts and reports: chart of accounts, journals, expenses, VAT withholding, commission, 28 reports</td><td class="status-done">Done</td></tr>
-      <tr><td>7</td><td>Integrations and extras: team accounts, settings, activity log and Extras are done. Next: PIN sign-in, backup and restore, KRA eTIMS live send, M-Pesa STK push, SMS, WhatsApp, email</td><td class="status-now">In progress</td></tr>
-      <tr><td>8</td><td>Licensing and release: licensing, installer, offline mode with bundled MariaDB, self-update</td><td class="status-planned">Planned</td></tr>
-    </table>
+    <h2>Getting started is easy</h2>
+    <ol class="steps">
+      <li><b>Book a demo.</b> We show you NTmart POS Go working with a shop like yours and answer your questions.</li>
+      <li><b>We set you up.</b> We install it on your till PCs, load your products and prices, and connect your receipt printer.</li>
+      <li><b>Start selling.</b> Your staff sign in with their own accounts and you are ready to sell.</li>
+    </ol>
 
-    <h2 id="faq">Frequently asked questions</h2>
+    <h2>Already using NTmart POS?</h2>
+    <p>NTmart POS Go is the new, faster edition of the NTmart POS you know. It works on <b>the same data</b>, so there is nothing to move and nothing to re-enter. Your products, clients, sales history and accounts are all there from day one.</p>
 
-    <h3>Do I need to move my data?</h3>
-    <p>No. The Go edition connects to the MySQL/MariaDB database NTmart already uses and works with the same tables.</p>
+    <h2>Questions</h2>
+    <h3>What do I need?</h3>
+    <p>A Windows PC at each till. A barcode scanner, a cash drawer and an 80mm or 58mm thermal receipt printer are recommended.</p>
+    <h3>Does it work with M-Pesa and KRA eTIMS?</h3>
+    <p>Yes. You can record M-Pesa payments at the till today, and sales are prepared for KRA eTIMS. Direct M-Pesa STK push at the till and sending to eTIMS straight from the Go edition are on the way.</p>
+    <h3>When can I get it?</h3>
+    <p>NTmart POS Go is in final testing. <a href="contact.html">Book a demo</a> to see it in action and to hear when it can be installed at your shop.</p>
 
-    <h3>Can I keep using the PHP edition?</h3>
-    <p>Yes. Both editions can run at the same time on the same database. Use the Go app for the screens that are ready and PHP for everything else.</p>
-
-    <h3>Can shops use it in production yet?</h3>
-    <p>Not yet. The Go edition is a preview until Phase 8 (licensing, installer and self-update) is finished. Until then it is for testing alongside the PHP edition.</p>
-
-    <h3>How do you know the numbers are right?</h3>
-    <p>Each module is checked against the PHP edition: the same action runs through both and the rows they write are compared. Totals and VAT match to six decimal places, receipts are byte-identical, and every client statement closes on its balance.</p>
-
-    <h3>What do I need to run it?</h3>
-    <p>A Windows PC and access to your NTmart MySQL/MariaDB server. On first run the app asks for the server details and saves them for next time.</p>
-
-    <h3>Does it support KRA eTIMS and M-Pesa?</h3>
-    <p>Sales are already queued for eTIMS, and the PHP edition sends them for now. The live eTIMS send and M-Pesa STK push are part of Phase 7.</p>
-
-    <hr>
-    <h2 id="contact">Contact</h2>
-    <!-- TODO: replace with the real NTmart contact details (email, phone or WhatsApp). -->
-    <p>Want to try the preview? Talk to the NTmart team about setting it up on a test copy of your database, and see the <a href="getting-started.html">getting started guide</a>.</p>
+    <div class="cta-strip">
+      <h2>See NTmart POS Go in your shop</h2>
+      <p>Book a free demo and we'll show you how it fits the way you work.</p>
+      <a class="button button-big" href="contact.html">Book a free demo</a>
+    </div>
 
   </div>
 
   <div id="footer">
-    <a href="index.html">Home</a> | <a href="#features">Features</a> | <a href="#roadmap">Roadmap</a> | <a href="#faq">FAQ</a> | <a href="getting-started.html">Get started</a><br>
+    <a href="index.html">Home</a> | <a href="features.html">Features</a> | <a href="contact.html">Contact</a> | <a href="getting-started.html">Setup guide</a><br>
     &copy; 2026 NTmart. All rights reserved.
   </div>
 
