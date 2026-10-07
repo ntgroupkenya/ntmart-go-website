@@ -37,21 +37,20 @@ This repository also holds the NTmart Go marketing website: plain HTML, CSS and 
 
 | Page | Contents |
 | --- | --- |
-| `index.html` | Home: hero with app mockup, benefits, setup steps, roadmap, call to action |
-| `features.html` | Features, with a sticky topbar that highlights the current section |
-| `pricing.html` | Plans with a monthly/yearly toggle, plus a comparison table |
+| `index.html` | Home: hero with app mockup, features, who it's for, setup steps, price call to action |
+| `features.html` | Sales, invoices and quotes, stock, accounting, low-spec PCs, NTmart POS users; sticky topbar |
+| `pricing.html` | Single plan: KES 25,000 lifetime licence, all features |
 | `faq.html` | Questions in expandable cards, with a sticky sidebar |
 | `about.html` | Story and values |
 | `privacy.html` | Privacy policy with a sticky sidebar |
-| `download.html` | Preview download, requirements, install steps |
+| `download.html` | How to get NTmart Go, requirements, setup steps |
 | `contact.html` | AJAX contact form with validation (posts to `mail.php`) |
 
 ### Before going live
 
-- **Prices:** `pricing.html` has placeholder prices. Edit the `data-monthly` and `data-yearly` values and the plan details.
-- **Contact details:** set `$emailTo` and `$emailFrom` in `mail.php`, and the email, phone and address in `contact.html`.
+- **Contact details:** use the same details as ntmartpos.co.ke. Set `$emailTo` and `$emailFrom` in `mail.php`, and the email, phone and address in `contact.html`.
 - **Privacy policy:** `privacy.html` is template text. Have it reviewed before publishing.
-- **Download link:** the button in `download.html` asks visitors to request a preview. Point it at the installer when one is public.
+- **Buying:** every "Get NTmart Go" button leads to the contact form (`contact.html?topic=purchase`). Point the button in `download.html` at an installer if you offer self-service downloads.
 
 ### Colour schemes
 

@@ -503,3 +503,6 @@ textarea.form__input { min-height: 150px; resize: vertical; }
 
 /* Keep anchored sections clear of the sticky menu + topbar */
 .topbar ~ * [id], .topbar ~ [id] { scroll-margin-top: 70px; }
+
+.col-offset-3 { margin-left: 25%; }
+@media (max-width: 989px) { .col-offset-3 { margin-left: 0; } }

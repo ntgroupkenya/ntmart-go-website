@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FAQ | NTmart Go</title>
-  <meta name="description" content="Answers to common questions about installing and running NTmart POS Go edition.">
+  <meta name="description" content="Answers to common questions about NTmart Go: what it does, what computer it needs, setup and pricing.">
   <meta name="author" content="NTmart">
   <meta property="og:title" content="FAQ | NTmart Go">
-  <meta property="og:description" content="Answers to common questions about installing and running NTmart POS Go edition.">
+  <meta property="og:description" content="Answers to common questions about NTmart Go: what it does, what computer it needs, setup and pricing.">
   <meta name="theme-color" content="#2563eb">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
@@ -28,7 +28,7 @@
           <div class="menu__dropdown-content">
             <a class="link link--gray" href="index.html">Overview</a>
             <a class="link link--gray" href="features.html">Features</a>
-            <a class="link link--gray" href="download.html">Download</a>
+            <a class="link link--gray" href="download.html">Get NTmart Go</a>
           </div>
         </li>
           <li><a class="link link--gray" href="pricing.html">Pricing</a></li>
@@ -39,7 +39,7 @@
 
     <div class="menu__right-nav d-t-none">
       <a class="link link--gray" href="contact.html">Contact</a>
-      <a class="site-btn site-btn--accent site-btn--small" href="download.html">Get the preview</a>
+      <a class="site-btn site-btn--accent site-btn--small" href="pricing.html">Get NTmart Go</a>
     </div>
 
     <button class="menu__burger d-none d-t-flex" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"><i class="mdi mdi-menu" aria-hidden="true"></i></button>
@@ -53,7 +53,7 @@
           <ul class="mobile-menu__ul mobile-menu__ul--collapsed" id="mobile-product" hidden>
             <li class="mobile-menu__li"><a class="link link--gray" href="index.html">Overview</a></li>
             <li class="mobile-menu__li"><a class="link link--gray" href="features.html">Features</a></li>
-            <li class="mobile-menu__li"><a class="link link--gray" href="download.html">Download</a></li>
+            <li class="mobile-menu__li"><a class="link link--gray" href="download.html">Get NTmart Go</a></li>
           </ul>
         </li>
         <li class="mobile-menu__li"><a class="link link--dark-gray" href="pricing.html">Pricing</a></li>
@@ -61,7 +61,7 @@
         <li class="mobile-menu__li"><a class="link link--dark-gray" href="about.html">About</a></li>
         <li class="mobile-menu__li"><a class="link link--dark-gray" href="contact.html">Contact</a></li>
       </ul>
-      <div class="mobile-menu__btn"><a class="site-btn site-btn--accent site-btn--block" href="download.html">Get the preview</a></div>
+      <div class="mobile-menu__btn"><a class="site-btn site-btn--accent site-btn--block" href="pricing.html">Get NTmart Go</a></div>
     </div>
   </nav>
 </div>
@@ -85,68 +85,60 @@
         <div class="chapter" id="general">
           <h2>General</h2>
           <details class="faq__card card" open>
-            <summary class="faq__card-title">What is NTmart POS Go edition?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>It's a native Windows rewrite of NTmart POS, written in Go. It runs on the same database as the current PHP version, so both can be used side by side while modules move over.</p></div>
+            <summary class="faq__card-title">What is NTmart Go?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>A simple point of sale for Windows. It covers sales, invoices and quotes, stock management and accounting.</p></div>
           </details>
           <details class="faq__card card">
-            <summary class="faq__card-title">Is it ready to replace the PHP edition?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>Not yet. The Go edition is a preview (Phase 1). It covers signing in and browsing the catalogue. Keep using the PHP edition for everything else until those modules move over.</p></div>
+            <summary class="faq__card-title">Who is it for?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>Businesses that want a simple, dependable system: open it up, make sales, create invoices and quotes, manage stock and track the accounts. If you don't need fancy screens or lots of extra features, NTmart Go is for you.</p></div>
           </details>
           <details class="faq__card card">
-            <summary class="faq__card-title">Can I use both editions at the same time?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>Yes. That's the point of the design. Both connect to the same MySQL/MariaDB database, so changes made in one are visible in the other.</p></div>
+            <summary class="faq__card-title">How is it different from NTmart POS?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>NTmart Go is the simpler, lighter option. It's a native Windows program that focuses on the everyday essentials and runs well on modest hardware. It also works with an existing NTmart database.</p></div>
           </details>
         </div>
 
-        <div class="chapter" id="installation">
-          <h2>Installation</h2>
+        <div class="chapter" id="computer">
+          <h2>Your computer</h2>
+          <details class="faq__card card">
+            <summary class="faq__card-title">Do I need a powerful computer?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>No. NTmart Go doesn't need much computing power and runs smoothly on older and low-spec Windows PCs.</p></div>
+          </details>
           <details class="faq__card card">
             <summary class="faq__card-title">What do I need to run it?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>A Windows PC that can reach your NTmart MySQL or MariaDB server, either on the same machine or over your local network.</p></div>
-          </details>
-          <details class="faq__card card">
-            <summary class="faq__card-title">How do I install it?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>Copy <code>NTmartPOS.exe</code> to the PC and run it. On first run it asks for your database server details. See the <a class="link link--accent-bold" href="download.html">download page</a> for the full steps.</p></div>
+            <div class="faq__card-description"><p>A Windows PC and a MySQL or MariaDB database, either on the same PC or on another computer on your network.</p></div>
           </details>
         </div>
 
-        <div class="chapter" id="database">
-          <h2>Database</h2>
+        <div class="chapter" id="setup">
+          <h2>Setup</h2>
           <details class="faq__card card">
-            <summary class="faq__card-title">Which database settings does it use?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>The default is server <code>localhost:3306</code>, user <code>root</code> and database <code>ntmart</code>. You can change them on first run.</p></div>
+            <summary class="faq__card-title">How do I connect it to my database?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>On first run, NTmart Go asks for your database server. The default is server <code>localhost:3306</code>, user <code>root</code> and database <code>ntmart</code>. To change it later, click <strong>Database&hellip;</strong> on the sign-in screen.</p></div>
           </details>
           <details class="faq__card card">
-            <summary class="faq__card-title">Where are the connection settings saved?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>In <code>%APPDATA%\NTmartGo\config.json</code> for each Windows user. To change them later, click <strong>Database&hellip;</strong> on the sign-in screen.</p></div>
-          </details>
-          <details class="faq__card card">
-            <summary class="faq__card-title">Is it safe to try on my live shop database?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>While the Go edition is in preview, we recommend trying it on a copy of your database first. Use <strong>Database&hellip;</strong> on the sign-in screen to point it at the copy.</p></div>
-          </details>
-        </div>
-
-        <div class="chapter" id="accounts">
-          <h2>Accounts</h2>
-          <details class="faq__card card">
-            <summary class="faq__card-title">Do I need new user accounts?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>No. Sign in with any existing NTmart user account.</p></div>
+            <summary class="faq__card-title">I already use NTmart POS. Do I need to move my data?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>No. NTmart Go uses the same database, and you sign in with your existing NTmart user accounts.</p></div>
           </details>
           <details class="faq__card card">
             <summary class="faq__card-title">I forgot my password. What do I do?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>Passwords are shared with the PHP edition. Ask your NTmart administrator to reset it there, or <a class="link link--accent-bold" href="contact.html?topic=support">contact support</a>.</p></div>
+            <div class="faq__card-description"><p>Ask your administrator to reset it, or <a class="link link--accent-bold" href="contact.html?topic=support">contact support</a>.</p></div>
           </details>
         </div>
 
         <div class="chapter" id="licensing">
-          <h2>Licensing and pricing</h2>
+          <h2>Price and licence</h2>
           <details class="faq__card card">
-            <summary class="faq__card-title">Can I give the preview to my clients?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>Not yet. The preview has no licence enforcement, so it isn't for distribution to client shops. Licensing is on the roadmap.</p></div>
+            <summary class="faq__card-title">How much does it cost?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>KES 25,000, paid once. That gets you a lifetime licence with every feature included.</p></div>
           </details>
           <details class="faq__card card">
-            <summary class="faq__card-title">How is it priced?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
-            <div class="faq__card-description"><p>Per till, billed monthly or yearly. See <a class="link link--accent-bold" href="pricing.html">pricing</a> for the plans.</p></div>
+            <summary class="faq__card-title">Are there monthly fees?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>No. There's no subscription. You pay once and the licence is yours for life.</p></div>
+          </details>
+          <details class="faq__card card">
+            <summary class="faq__card-title">How do I buy it?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p><a class="link link--accent-bold" href="contact.html?topic=purchase">Contact us</a> and we'll get you set up.</p></div>
           </details>
         </div>
 
@@ -155,10 +147,9 @@
         <nav class="sidebar" data-spy="item" aria-label="FAQ sections">
           <ul class="sidebar__list">
             <li class="sidebar__item active"><a href="#general">General</a></li>
-            <li class="sidebar__item"><a href="#installation">Installation</a></li>
-            <li class="sidebar__item"><a href="#database">Database</a></li>
-            <li class="sidebar__item"><a href="#accounts">Accounts</a></li>
-            <li class="sidebar__item"><a href="#licensing">Licensing and pricing</a></li>
+            <li class="sidebar__item"><a href="#computer">Your computer</a></li>
+            <li class="sidebar__item"><a href="#setup">Setup</a></li>
+            <li class="sidebar__item"><a href="#licensing">Price and licence</a></li>
           </ul>
         </nav>
       </div>
@@ -175,7 +166,7 @@
         <ul>
           <li><a class="link link--gray" href="features.html">Features</a></li>
           <li><a class="link link--gray" href="pricing.html">Pricing</a></li>
-          <li><a class="link link--gray" href="download.html">Download</a></li>
+          <li><a class="link link--gray" href="download.html">Get NTmart Go</a></li>
           <li><a class="link link--gray" href="about.html">About</a></li>
           <li><a class="link link--gray" href="faq.html">FAQ</a></li>
           <li><a class="link link--gray" href="privacy.html">Privacy</a></li>

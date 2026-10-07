@@ -52,8 +52,7 @@ $consent  = isset($_POST['consent']);
 
 $topics = [
     'general' => 'General question',
-    'preview' => 'Preview build request',
-    'pricing' => 'Pricing and licences',
+    'purchase' => 'Buy NTmart Go',
     'support' => 'Support',
 ];
 
