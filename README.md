@@ -2,14 +2,13 @@
 
 The product website for **NTmart POS Go**, the native Windows rewrite of NTmart POS. It runs on the same MySQL/MariaDB database as the PHP edition.
 
-It is a static site: plain HTML, CSS and a little JavaScript, with no build step.
+It is a simple, light, old-school static site: plain HTML and one stylesheet. There is no JavaScript and no build step.
 
 ## Pages
 
 - `index.html`: home page (overview, why Go, features, roadmap, FAQ)
 - `getting-started.html`: requirements, build and run, database connection, running next to PHP, developer notes
-- `assets/style.css`: styles, with light and dark themes
-- `assets/site.js`: theme toggle, mobile menu, copy buttons on code blocks
+- `assets/style.css`: the stylesheet (light theme only, system fonts)
 - `assets/favicon.svg`: logo and favicon
 
 ## Preview locally
