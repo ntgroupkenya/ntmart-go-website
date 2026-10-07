@@ -39,7 +39,7 @@ This repository also holds the NTmart Go marketing website: plain HTML, CSS and 
 | --- | --- |
 | `index.html` | Home: hero with app mockup, features, who it's for, setup steps, price call to action |
 | `features.html` | Sales, invoices and quotes, stock, accounting, low-spec PCs, NTmart POS users; sticky topbar |
-| `pricing.html` | Single plan: KES 25,000 lifetime licence, all features |
+| `pricing.html` | Standard (KES 15,000) and Complete (KES 25,000) lifetime licences, maintenance, comparison table |
 | `faq.html` | Questions in expandable cards, with a sticky sidebar |
 | `about.html` | Story and values |
 | `privacy.html` | Privacy policy with a sticky sidebar |
@@ -50,6 +50,7 @@ This repository also holds the NTmart Go marketing website: plain HTML, CSS and 
 
 - **Contact details:** use the same details as ntmartpos.co.ke. Set `$emailTo` and `$emailFrom` in `mail.php`, and the email, phone and address in `contact.html`.
 - **Privacy policy:** `privacy.html` is template text. Have it reviewed before publishing.
+- **Pricing:** Standard KES 15,000 and Complete KES 25,000 (adds M-Pesa, KRA, SMS), both lifetime; maintenance is 33% of the licence.
 - **Buying:** every "Get NTmart Go" button leads to the contact form (`contact.html?topic=purchase`). Point the button in `download.html` at an installer if you offer self-service downloads.
 
 ### Colour schemes
