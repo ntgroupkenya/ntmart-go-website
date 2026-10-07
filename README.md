@@ -2,7 +2,7 @@
 
 The marketing website for **NTmart POS Go**, the native Windows rewrite of NTmart POS. It runs on the same MySQL/MariaDB database as the PHP edition.
 
-It is a simple, light, old-school static site: plain HTML and one stylesheet. There is no JavaScript and no build step.
+It is a static site with a classic look and a modern layout: serif headings (Libre Caslon Text), a clean sans-serif body (Instrument Sans), a deep green and brass palette, light mode only. Plain HTML and one stylesheet, with no JavaScript and no build step. Fonts load from Google Fonts, with Georgia and system fonts as fallbacks.
 
 ## Pages
 
@@ -10,7 +10,7 @@ It is a simple, light, old-school static site: plain HTML and one stylesheet. Th
 - `features.html`: full feature list and what's coming soon
 - `contact.html`: book a demo, contact details, pricing note
 - `getting-started.html`: technical setup guide (linked from the footer)
-- `assets/style.css`: the stylesheet (light theme only, system fonts)
+- `assets/style.css`: the stylesheet (colours and fonts are set as variables at the top)
 - `assets/favicon.svg`: logo and favicon
 
 ## Preview locally

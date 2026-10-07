@@ -5,74 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Setup Guide · NTmart POS Go</title>
   <meta name="description" content="How to build, run and connect NTmart POS Go to your NTmart MySQL/MariaDB database.">
+  <meta name="theme-color" content="#12463f">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div id="page">
 
-  <div id="header">
-    <h1><a href="index.html">NTmart POS Go</a></h1>
-    <p>Point of sale, stock and accounts for Kenyan shops</p>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">N</span><span class="brand-name">NTmart <span>POS Go</span></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="btn" href="contact.html">Book a demo</a>
   </div>
+</header>
 
-  <div id="nav">
-    <a href="index.html">Home</a><span class="sep">|</span>
-    <a href="features.html">Features</a><span class="sep">|</span>
-    <a href="contact.html">Contact</a>
-    <span class="nav-cta"><a class="button" href="contact.html">Book a demo</a></span>
-  </div>
+<main>
 
-  <div id="content">
-
-    <h2>Setup guide</h2>
-    <p class="intro">Build the app, connect it to an NTmart database and sign in with an existing NTmart user account.</p>
-
-    <div class="notice">
-      <b>Preview edition.</b> NTmart POS Go has no licence enforcement yet, so don't give it to clients. Use it on a test copy of the database, alongside the PHP edition, until Phase 8 ships.
-    </div>
-
-    <p><b>On this page:</b>
-      <a href="#requirements">Requirements</a> &middot;
-      <a href="#run">Build and run</a> &middot;
-      <a href="#connect">Connect to the database</a> &middot;
-      <a href="#side-by-side">Running next to PHP</a> &middot;
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Setup guide</span>
+    <h1>Setting up <em>NTmart POS Go</em></h1>
+    <p class="lead">Build the app, connect it to an NTmart database and sign in with an existing NTmart user account.</p>
+    <div class="notice"><strong>Preview edition.</strong> NTmart POS Go has no licence enforcement yet, so don't give it to clients. Use it on a test copy of the database, alongside the PHP edition, until Phase 8 ships.</div>
+    <nav class="toc" aria-label="On this page">
+      <a href="#requirements">Requirements</a>
+      <a href="#run">Build and run</a>
+      <a href="#connect">Connect to the database</a>
+      <a href="#side-by-side">Running next to PHP</a>
       <a href="#developers">For developers</a>
-    </p>
+    </nav>
+  </div>
+</section>
 
+<div class="wrap">
+  <article class="prose">
     <h2 id="requirements">Requirements</h2>
-    <table>
+    <div class="table-wrap"><table>
       <tr><th>Item</th><th>Details</th></tr>
       <tr><td>Operating system</td><td>Windows (native Win32 app)</td></tr>
       <tr><td>Database</td><td>MySQL or MariaDB with the NTmart schema, the same database the PHP edition uses</td></tr>
       <tr><td>Account</td><td>An existing NTmart user account</td></tr>
       <tr><td>Receipt printer</td><td>Optional: an ESC/POS thermal printer, 80mm or 58mm</td></tr>
       <tr><td>To build from source</td><td>Go toolchain and PowerShell</td></tr>
-    </table>
+    </table></div>
 
     <h2 id="run">Build and run</h2>
     <ol>
       <li>
-        <b>Build the app.</b> From the project folder, run the build script in PowerShell. It produces <code>NTmartPOS.exe</code>.
+        <strong>Build the app.</strong> From the project folder, run the build script in PowerShell. It produces <code>NTmartPOS.exe</code>.
         <pre><code>.\build.ps1</code></pre>
       </li>
       <li>
-        <b>Start it.</b>
+        <strong>Start it.</strong>
         <pre><code>.\NTmartPOS.exe</code></pre>
       </li>
       <li>
-        <b>Sign in</b> with an existing NTmart user account. Passwords, lockout and the audit log work the same as in the PHP edition.
+        <strong>Sign in</strong> with an existing NTmart user account. Passwords, lockout and the audit log work the same as in the PHP edition.
       </li>
     </ol>
 
     <h2 id="connect">Connect to the database</h2>
     <p>On first run the app asks for the database server. The defaults are:</p>
-    <table>
+    <div class="table-wrap"><table>
       <tr><td>Server</td><td><code>localhost:3306</code></td></tr>
       <tr><td>User</td><td><code>root</code></td></tr>
       <tr><td>Database</td><td><code>ntmart</code></td></tr>
-    </table>
-    <p>The details are saved to <code>%APPDATA%\NTmartGo\config.json</code>. To change them later, click <b>Database...</b> on the sign-in screen.</p>
+    </table></div>
+    <p>The details are saved to <code>%APPDATA%\NTmartGo\config.json</code>. To change them later, click <strong>Database...</strong> on the sign-in screen.</p>
 
     <h2 id="side-by-side">Running next to PHP</h2>
     <p>The Go edition reads and writes the existing NTmart tables exactly as the PHP edition does, so both can run on the same database at the same time.</p>
@@ -87,34 +93,58 @@
     <p>Unit tests run on their own. The integration tests also need a database. Point <code>NTMART_TEST_DSN</code> at a disposable copy such as <code>ntmart_godev</code>:</p>
     <pre><code>$env:NTMART_TEST_DSN = 'root@tcp(localhost:3306)/ntmart_godev?parseTime=true&amp;charset=utf8mb4'
 go test ./...</code></pre>
-    <p><b>The integration tests insert and delete rows.</b> Never point them at a client database.</p>
+    <p><strong>The integration tests insert and delete rows.</strong> Never point them at a client database.</p>
 
     <h3>Project layout</h3>
-    <table>
+    <div class="table-wrap"><table>
       <tr><td><code>main.go</code></td><td>Startup: connect, sign in, main window, sign out</td></tr>
       <tr><td><code>internal/config</code></td><td>Database connection settings</td></tr>
       <tr><td><code>internal/store</code></td><td>Data access to the NTmart schema</td></tr>
       <tr><td><code>internal/escpos</code></td><td>ESC/POS receipt builder</td></tr>
       <tr><td><code>ui</code></td><td>Windows and dialogs (lxn/walk, native Win32 controls)</td></tr>
-    </table>
+    </table></div>
 
     <h3>House rules</h3>
     <ul>
-      <li><b>Money is exact.</b> Use <code>shopspring/decimal</code> for every amount and quantity, never <code>float64</code>.</li>
-      <li><b>One shape for money queries.</b> Read the <code>*_splits</code> tables, exclude contra settlements, and negate refunds rather than summing them. Copy the PHP query instead of re-deriving it.</li>
-      <li><b>Use the database clock</b> (<code>NOW()</code>) for anything compared against other timestamps.</li>
-      <li><b>Multi-step writes go in one transaction</b>, with deadlock retry and idempotency keys.</li>
+      <li><strong>Money is exact.</strong> Use <code>shopspring/decimal</code> for every amount and quantity, never <code>float64</code>.</li>
+      <li><strong>One shape for money queries.</strong> Read the <code>*_splits</code> tables, exclude contra settlements, and negate refunds rather than summing them. Copy the PHP query instead of re-deriving it.</li>
+      <li><strong>Use the database clock</strong> (<code>NOW()</code>) for anything compared against other timestamps.</li>
+      <li><strong>Multi-step writes go in one transaction</strong>, with deadlock retry and idempotency keys.</li>
     </ul>
-
-    <p><a href="#page">Back to top &uarr;</a></p>
-
-  </div>
-
-  <div id="footer">
-    <a href="index.html">Home</a> | <a href="features.html">Features</a> | <a href="contact.html">Contact</a> | <a href="getting-started.html">Setup guide</a><br>
-    &copy; 2026 NTmart. All rights reserved.
-  </div>
-
+  </article>
 </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">N</span><span class="brand-name">NTmart <span>POS Go</span></span></a>
+        <p>Point of sale, stock and accounts for Kenyan shops, in one fast Windows app.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="features.html#coming-soon">Coming soon</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Book a demo</a></li>
+          <li><a href="contact.html#pricing">Pricing</a></li>
+          <li><a href="getting-started.html">Setup guide</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 NTmart. All rights reserved.</span>
+      <span>Made for Kenyan retail</span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
