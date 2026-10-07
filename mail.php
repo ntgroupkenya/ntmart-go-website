@@ -8,8 +8,8 @@
 
 declare(strict_types=1);
 
-$emailTo   = 'info@example.com';
-$emailFrom = 'no-reply@example.com';
+$emailTo   = 'ntmart@ntgroup.co.ke';
+$emailFrom = 'no-reply@ntgroup.co.ke';
 $siteName  = 'NTmart Go';
 
 header('Content-Type: application/json; charset=utf-8');
@@ -96,7 +96,7 @@ $headers = [
 $sent = mail($emailTo, '=?UTF-8?B?' . base64_encode($subject) . '?=', $body, implode("\r\n", $headers));
 
 if (!$sent) {
-    respond(500, false, 'Sorry, your message could not be sent. Please email us directly.');
+    respond(500, false, 'Sorry, your message could not be sent. Please email ntmart@ntgroup.co.ke or WhatsApp +254 711 294 124.');
 }
 
 respond(200, true, "Thanks, $name! Your message has been sent. We'll get back to you soon.");

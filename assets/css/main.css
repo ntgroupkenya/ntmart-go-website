@@ -494,7 +494,7 @@ textarea.form__input { min-height: 150px; resize: vertical; }
 .footer-menu__social { display: flex; gap: 10px; margin: 0; }
 .footer-menu__social a { display: inline-flex; width: 40px; height: 40px; align-items: center; justify-content: center; background: var(--bg-light); font-size: 1.2rem; }
 .footer { padding: 20px 0 32px; color: var(--muted); font-size: 0.9rem; }
-.footer p { margin: 0; }
+.footer p { margin: 0 0 4px; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
