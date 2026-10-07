@@ -1,0 +1,7 @@
+/* Violet gradient colour scheme */
+:root {
+  --accent: #7c3aed;
+  --accent-dark: #6d28d9;
+  --accent-soft: #f1eafe;
+  --hero-bg: linear-gradient(135deg, #4c1d95 0%, #7c3aed 50%, #db2777 100%);
+}

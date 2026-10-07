@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ | NTmart Go</title>
+  <meta name="description" content="Answers to common questions about installing and running NTmart POS Go edition.">
+  <meta name="author" content="NTmart">
+  <meta property="og:title" content="FAQ | NTmart Go">
+  <meta property="og:description" content="Answers to common questions about installing and running NTmart POS Go edition.">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Colour scheme: blue, green, red, violet, or any of them with -gradient -->
+  <link rel="stylesheet" href="assets/css/themes/blue-gradient.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="menu">
+  <div class="container menu__inner">
+    <a class="menu__logo" href="index.html" aria-label="NTmart Go home"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="var(--accent)"/><path d="M11 28V12h3.2l8.6 10.6V12H26v16h-3.2l-8.6-10.6V28z" fill="#fff"/><circle cx="31" cy="27" r="3" fill="#fff"/></svg><span>NTmart<b>Go</b></span></a>
+
+    <nav class="menu__center-nav d-t-none" aria-label="Main">
+      <ul>
+        <li class="menu__dropdown">
+          <button class="link link--gray menu__dropdown-btn" type="button" aria-expanded="false">Product <i class="mdi mdi-chevron-down" aria-hidden="true"></i></button>
+          <div class="menu__dropdown-content">
+            <a class="link link--gray" href="index.html">Overview</a>
+            <a class="link link--gray" href="features.html">Features</a>
+            <a class="link link--gray" href="download.html">Download</a>
+          </div>
+        </li>
+          <li><a class="link link--gray" href="pricing.html">Pricing</a></li>
+          <li><a class="link link--gray link--active" href="faq.html" aria-current="page">FAQ</a></li>
+          <li><a class="link link--gray" href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu__right-nav d-t-none">
+      <a class="link link--gray" href="contact.html">Contact</a>
+      <a class="site-btn site-btn--accent site-btn--small" href="download.html">Get the preview</a>
+    </div>
+
+    <button class="menu__burger d-none d-t-flex" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"><i class="mdi mdi-menu" aria-hidden="true"></i></button>
+  </div>
+
+  <nav class="mobile-menu d-none d-t-block" id="mobile-menu" aria-label="Mobile" hidden>
+    <div class="container">
+      <ul class="mobile-menu__ul">
+        <li class="mobile-menu__li">
+          <button class="mobile-menu__collapse link link--dark-gray" type="button" aria-expanded="false" aria-controls="mobile-product">Product <i class="mdi mdi-chevron-down" aria-hidden="true"></i></button>
+          <ul class="mobile-menu__ul mobile-menu__ul--collapsed" id="mobile-product" hidden>
+            <li class="mobile-menu__li"><a class="link link--gray" href="index.html">Overview</a></li>
+            <li class="mobile-menu__li"><a class="link link--gray" href="features.html">Features</a></li>
+            <li class="mobile-menu__li"><a class="link link--gray" href="download.html">Download</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray" href="pricing.html">Pricing</a></li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray link--active" href="faq.html" aria-current="page">FAQ</a></li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray" href="about.html">About</a></li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-menu__btn"><a class="site-btn site-btn--accent site-btn--block" href="download.html">Get the preview</a></div>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+<header class="header-home header-home--center-content header-home--small">
+  <div class="background background--wave">
+    <div class="container">
+      <span class="badge badge--on-color">FAQ</span>
+      <h1 class="header-home__title">Frequently asked questions</h1>
+      <p class="header-home__description">Can't find your answer? <a class="link" style="color:#fff;font-weight:800" href="contact.html">Ask us</a>.</p>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-9 col-t-12">
+
+        <div class="chapter" id="general">
+          <h2>General</h2>
+          <details class="faq__card card" open>
+            <summary class="faq__card-title">What is NTmart POS Go edition?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>It's a native Windows rewrite of NTmart POS, written in Go. It runs on the same database as the current PHP version, so both can be used side by side while modules move over.</p></div>
+          </details>
+          <details class="faq__card card">
+            <summary class="faq__card-title">Is it ready to replace the PHP edition?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>Not yet. The Go edition is a preview (Phase 1). It covers signing in and browsing the catalogue. Keep using the PHP edition for everything else until those modules move over.</p></div>
+          </details>
+          <details class="faq__card card">
+            <summary class="faq__card-title">Can I use both editions at the same time?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>Yes. That's the point of the design. Both connect to the same MySQL/MariaDB database, so changes made in one are visible in the other.</p></div>
+          </details>
+        </div>
+
+        <div class="chapter" id="installation">
+          <h2>Installation</h2>
+          <details class="faq__card card">
+            <summary class="faq__card-title">What do I need to run it?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>A Windows PC that can reach your NTmart MySQL or MariaDB server, either on the same machine or over your local network.</p></div>
+          </details>
+          <details class="faq__card card">
+            <summary class="faq__card-title">How do I install it?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>Copy <code>NTmartPOS.exe</code> to the PC and run it. On first run it asks for your database server details. See the <a class="link link--accent-bold" href="download.html">download page</a> for the full steps.</p></div>
+          </details>
+        </div>
+
+        <div class="chapter" id="database">
+          <h2>Database</h2>
+          <details class="faq__card card">
+            <summary class="faq__card-title">Which database settings does it use?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>The default is server <code>localhost:3306</code>, user <code>root</code> and database <code>ntmart</code>. You can change them on first run.</p></div>
+          </details>
+          <details class="faq__card card">
+            <summary class="faq__card-title">Where are the connection settings saved?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>In <code>%APPDATA%\NTmartGo\config.json</code> for each Windows user. To change them later, click <strong>Database&hellip;</strong> on the sign-in screen.</p></div>
+          </details>
+          <details class="faq__card card">
+            <summary class="faq__card-title">Is it safe to try on my live shop database?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>While the Go edition is in preview, we recommend trying it on a copy of your database first. Use <strong>Database&hellip;</strong> on the sign-in screen to point it at the copy.</p></div>
+          </details>
+        </div>
+
+        <div class="chapter" id="accounts">
+          <h2>Accounts</h2>
+          <details class="faq__card card">
+            <summary class="faq__card-title">Do I need new user accounts?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>No. Sign in with any existing NTmart user account.</p></div>
+          </details>
+          <details class="faq__card card">
+            <summary class="faq__card-title">I forgot my password. What do I do?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>Passwords are shared with the PHP edition. Ask your NTmart administrator to reset it there, or <a class="link link--accent-bold" href="contact.html?topic=support">contact support</a>.</p></div>
+          </details>
+        </div>
+
+        <div class="chapter" id="licensing">
+          <h2>Licensing and pricing</h2>
+          <details class="faq__card card">
+            <summary class="faq__card-title">Can I give the preview to my clients?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>Not yet. The preview has no licence enforcement, so it isn't for distribution to client shops. Licensing is on the roadmap.</p></div>
+          </details>
+          <details class="faq__card card">
+            <summary class="faq__card-title">How is it priced?<span class="faq__card-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i></span></summary>
+            <div class="faq__card-description"><p>Per till, billed monthly or yearly. See <a class="link link--accent-bold" href="pricing.html">pricing</a> for the plans.</p></div>
+          </details>
+        </div>
+
+      </div>
+      <div class="col-3 d-t-none">
+        <nav class="sidebar" data-spy="item" aria-label="FAQ sections">
+          <ul class="sidebar__list">
+            <li class="sidebar__item active"><a href="#general">General</a></li>
+            <li class="sidebar__item"><a href="#installation">Installation</a></li>
+            <li class="sidebar__item"><a href="#database">Database</a></li>
+            <li class="sidebar__item"><a href="#accounts">Accounts</a></li>
+            <li class="sidebar__item"><a href="#licensing">Licensing and pricing</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-menu">
+    <div class="footer-menu__inner">
+      <a class="menu__logo" href="index.html" aria-label="NTmart Go home"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="var(--accent)"/><path d="M11 28V12h3.2l8.6 10.6V12H26v16h-3.2l-8.6-10.6V28z" fill="#fff"/><circle cx="31" cy="27" r="3" fill="#fff"/></svg><span>NTmart<b>Go</b></span></a>
+      <nav class="footer-menu__nav" aria-label="Footer">
+        <ul>
+          <li><a class="link link--gray" href="features.html">Features</a></li>
+          <li><a class="link link--gray" href="pricing.html">Pricing</a></li>
+          <li><a class="link link--gray" href="download.html">Download</a></li>
+          <li><a class="link link--gray" href="about.html">About</a></li>
+          <li><a class="link link--gray" href="faq.html">FAQ</a></li>
+          <li><a class="link link--gray" href="privacy.html">Privacy</a></li>
+          <li><a class="link link--gray" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Add your social links here, e.g. <a class="link link--gray" href="https://facebook.com/..." aria-label="Facebook"><i class="mdi mdi-facebook"></i></a> -->
+      <p class="footer-menu__social">
+        <a class="link link--gray" href="contact.html" aria-label="Email us"><i class="mdi mdi-email-outline" aria-hidden="true"></i></a>
+      </p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p>&copy; <span data-year>2026</span> NTmart. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

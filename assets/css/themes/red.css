@@ -1,0 +1,7 @@
+/* Red colour scheme */
+:root {
+  --accent: #dc2626;
+  --accent-dark: #b91c1c;
+  --accent-soft: #fdecec;
+  --hero-bg: var(--accent);
+}

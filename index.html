@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NTmart POS Go edition: a native Windows point of sale</title>
+  <meta name="description" content="NTmart POS Go edition is a fast, native Windows point of sale that runs on your existing NTmart MySQL/MariaDB database.">
+  <meta name="author" content="NTmart">
+  <meta property="og:title" content="NTmart POS Go edition: a native Windows point of sale">
+  <meta property="og:description" content="NTmart POS Go edition is a fast, native Windows point of sale that runs on your existing NTmart MySQL/MariaDB database.">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Colour scheme: blue, green, red, violet, or any of them with -gradient -->
+  <link rel="stylesheet" href="assets/css/themes/blue-gradient.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="menu">
+  <div class="container menu__inner">
+    <a class="menu__logo" href="index.html" aria-label="NTmart Go home"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="var(--accent)"/><path d="M11 28V12h3.2l8.6 10.6V12H26v16h-3.2l-8.6-10.6V28z" fill="#fff"/><circle cx="31" cy="27" r="3" fill="#fff"/></svg><span>NTmart<b>Go</b></span></a>
+
+    <nav class="menu__center-nav d-t-none" aria-label="Main">
+      <ul>
+        <li class="menu__dropdown">
+          <button class="link link--gray menu__dropdown-btn link--active" type="button" aria-expanded="false">Product <i class="mdi mdi-chevron-down" aria-hidden="true"></i></button>
+          <div class="menu__dropdown-content">
+            <a class="link link--gray link--active" href="index.html" aria-current="page">Overview</a>
+            <a class="link link--gray" href="features.html">Features</a>
+            <a class="link link--gray" href="download.html">Download</a>
+          </div>
+        </li>
+          <li><a class="link link--gray" href="pricing.html">Pricing</a></li>
+          <li><a class="link link--gray" href="faq.html">FAQ</a></li>
+          <li><a class="link link--gray" href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu__right-nav d-t-none">
+      <a class="link link--gray" href="contact.html">Contact</a>
+      <a class="site-btn site-btn--accent site-btn--small" href="download.html">Get the preview</a>
+    </div>
+
+    <button class="menu__burger d-none d-t-flex" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"><i class="mdi mdi-menu" aria-hidden="true"></i></button>
+  </div>
+
+  <nav class="mobile-menu d-none d-t-block" id="mobile-menu" aria-label="Mobile" hidden>
+    <div class="container">
+      <ul class="mobile-menu__ul">
+        <li class="mobile-menu__li">
+          <button class="mobile-menu__collapse link link--dark-gray" type="button" aria-expanded="true" aria-controls="mobile-product">Product <i class="mdi mdi-chevron-down" aria-hidden="true"></i></button>
+          <ul class="mobile-menu__ul mobile-menu__ul--collapsed" id="mobile-product">
+            <li class="mobile-menu__li"><a class="link link--gray link--active" href="index.html" aria-current="page">Overview</a></li>
+            <li class="mobile-menu__li"><a class="link link--gray" href="features.html">Features</a></li>
+            <li class="mobile-menu__li"><a class="link link--gray" href="download.html">Download</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray" href="pricing.html">Pricing</a></li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray" href="faq.html">FAQ</a></li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray" href="about.html">About</a></li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-menu__btn"><a class="site-btn site-btn--accent site-btn--block" href="download.html">Get the preview</a></div>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+<header class="header-home">
+  <div class="background background--wave">
+    <div class="container">
+      <div class="row header-home__row">
+        <div class="col-6 col-t-12">
+          <span class="badge badge--on-color">Preview &middot; Phase 1</span>
+          <h1 class="header-home__title">NTmart POS, now as a fast native Windows app</h1>
+          <p class="header-home__description">The Go edition of NTmart POS runs on the same MySQL/MariaDB database as your current system. Keep the PHP version running and move over one module at a time.</p>
+          <div class="header-home__btns">
+            <a href="download.html" class="site-btn site-btn--invert"><i class="mdi mdi-microsoft-windows" aria-hidden="true"></i> Get the preview</a>
+            <a href="features.html" class="site-btn site-btn--ghost">See what it does</a>
+          </div>
+          <p class="header-home__note">No data migration. Sign in with your existing NTmart account.</p>
+        </div>
+        <div class="col-6 col-t-12">
+          <div class="app-window" role="img" aria-label="Illustration of the NTmart POS catalogue screen">
+            <div class="app-window__bar"><span></span><span></span><span></span><strong>NTmart POS &mdash; Catalogue</strong></div>
+            <div class="app-window__body">
+              <div class="app-window__search"><i class="mdi mdi-magnify" aria-hidden="true"></i> Search products or scan a barcode</div>
+              <table>
+                <thead><tr><th>Product</th><th>Category</th><th>In stock</th><th>Price</th></tr></thead>
+                <tbody>
+                  <tr><td>Maize flour 2kg</td><td>Flour</td><td>48</td><td>KES 180</td></tr>
+                  <tr class="is-selected"><td>Sugar 1kg</td><td>Groceries</td><td>120</td><td>KES 165</td></tr>
+                  <tr><td>Fresh milk 500ml</td><td>Dairy</td><td>36</td><td>KES 65</td></tr>
+                  <tr><td>White bread 400g</td><td>Bakery</td><td>22</td><td>KES 70</td></tr>
+                  <tr><td>Cooking oil 1L</td><td>Groceries</td><td>30</td><td>KES 320</td></tr>
+                </tbody>
+              </table>
+              <div class="app-window__status"><span><span class="app-window__dot"></span>Connected &middot; localhost:3306</span><span>Signed in as cashier</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__eyebrow">Why the Go edition</span>
+      <h2 class="section__title">Built for the shop counter</h2>
+      <p class="section__description">A desktop app that opens instantly and talks straight to your database, with no browser and no local web server.</p>
+    </div>
+    <div class="row row--gap">
+      <div class="col-4 col-t-12">
+        <div class="card">
+          <span class="card__icon"><i class="mdi mdi-microsoft-windows" aria-hidden="true"></i></span>
+          <h3 class="card__title">Native Windows app</h3>
+          <p class="card__text">Real Windows controls and one small executable. It starts fast and feels at home on the till PC.</p>
+        </div>
+      </div>
+      <div class="col-4 col-t-12">
+        <div class="card">
+          <span class="card__icon"><i class="mdi mdi-database-sync-outline" aria-hidden="true"></i></span>
+          <h3 class="card__title">Your existing database</h3>
+          <p class="card__text">It reads the same MySQL/MariaDB tables as the PHP edition, so your products, users and settings are already there.</p>
+        </div>
+      </div>
+      <div class="col-4 col-t-12">
+        <div class="card">
+          <span class="card__icon"><i class="mdi mdi-swap-horizontal" aria-hidden="true"></i></span>
+          <h3 class="card__title">Side by side</h3>
+          <p class="card__text">Run both editions together while modules move over. There's no big-bang switch and no retraining day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__eyebrow">Getting started</span>
+      <h2 class="section__title">Up and running in three steps</h2>
+    </div>
+    <div class="row row--gap steps">
+      <div class="col-4 col-t-12">
+        <div class="step">
+          <h3>Install</h3>
+          <p class="card__text">Copy <code>NTmartPOS.exe</code> onto the Windows PC next to your NTmart server, or any PC on the same network.</p>
+        </div>
+      </div>
+      <div class="col-4 col-t-12">
+        <div class="step">
+          <h3>Connect</h3>
+          <p class="card__text">On first run, enter your database server. The default is <code>localhost:3306</code> with the <code>ntmart</code> database.</p>
+        </div>
+      </div>
+      <div class="col-4 col-t-12">
+        <div class="step">
+          <h3>Sign in</h3>
+          <p class="card__text">Use any existing NTmart user account. No new passwords and no new user setup.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row row--center" style="row-gap:40px">
+      <div class="col-6 col-t-12">
+        <span class="section__eyebrow">One database, two apps</span>
+        <h2>Move over at your own pace</h2>
+        <p class="section__description" style="margin-bottom:24px">Both editions work on the same data, so changes made in one show up in the other straight away.</p>
+        <ul class="check-list">
+          <li>No export, import or migration step</li>
+          <li>Change the database server any time from the sign-in screen</li>
+          <li>Connection settings are saved per Windows user</li>
+        </ul>
+        <a href="features.html" class="site-btn site-btn--light">Explore features</a>
+      </div>
+      <div class="col-5 col-t-12 col-offset-1">
+        <div class="illustration" aria-hidden="true">
+          <div class="illustration__row"><i class="mdi mdi-web"></i> NTmart POS (PHP edition)</div>
+          <div class="illustration__arrow"><i class="mdi mdi-swap-vertical"></i></div>
+          <div class="illustration__row"><i class="mdi mdi-database-outline"></i> MySQL / MariaDB: <code style="background:none;border:0;color:inherit">ntmart</code></div>
+          <div class="illustration__arrow"><i class="mdi mdi-swap-vertical"></i></div>
+          <div class="illustration__row"><i class="mdi mdi-microsoft-windows"></i> NTmart POS (Go edition)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__eyebrow">Roadmap</span>
+      <h2 class="section__title">Where the Go edition is today</h2>
+      <p class="section__description">We're moving NTmart POS over module by module. Here's the current status.</p>
+    </div>
+    <div class="row row--gap">
+      <div class="col-4 col-t-12">
+        <div class="card card--flat">
+          <span class="badge card__tag">Available</span>
+          <span class="card__icon"><i class="mdi mdi-account-key-outline" aria-hidden="true"></i></span>
+          <h3 class="card__title">Sign in</h3>
+          <p class="card__text">Sign in and out with your existing NTmart user accounts.</p>
+        </div>
+      </div>
+      <div class="col-4 col-t-12">
+        <div class="card card--flat">
+          <span class="badge card__tag">Available</span>
+          <span class="card__icon"><i class="mdi mdi-package-variant-closed" aria-hidden="true"></i></span>
+          <h3 class="card__title">Catalogue</h3>
+          <p class="card__text">Browse and search your products straight from the database.</p>
+        </div>
+      </div>
+      <div class="col-4 col-t-12">
+        <div class="card card--flat">
+          <span class="badge badge--muted card__tag">Next</span>
+          <span class="card__icon"><i class="mdi mdi-cash-register" aria-hidden="true"></i></span>
+          <h3 class="card__title">More modules</h3>
+          <p class="card__text">The remaining modules are moving over from the PHP edition, along with licence activation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--accent section--tight">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <h2>Try the preview on your shop's data</h2>
+        <p>Preview builds are for testing. Point them at a copy of your database first.</p>
+      </div>
+      <div class="cta__btns">
+        <a href="download.html" class="site-btn site-btn--invert">Get the preview</a>
+        <a href="contact.html" class="site-btn site-btn--ghost">Talk to us</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-menu">
+    <div class="footer-menu__inner">
+      <a class="menu__logo" href="index.html" aria-label="NTmart Go home"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="var(--accent)"/><path d="M11 28V12h3.2l8.6 10.6V12H26v16h-3.2l-8.6-10.6V28z" fill="#fff"/><circle cx="31" cy="27" r="3" fill="#fff"/></svg><span>NTmart<b>Go</b></span></a>
+      <nav class="footer-menu__nav" aria-label="Footer">
+        <ul>
+          <li><a class="link link--gray" href="features.html">Features</a></li>
+          <li><a class="link link--gray" href="pricing.html">Pricing</a></li>
+          <li><a class="link link--gray" href="download.html">Download</a></li>
+          <li><a class="link link--gray" href="about.html">About</a></li>
+          <li><a class="link link--gray" href="faq.html">FAQ</a></li>
+          <li><a class="link link--gray" href="privacy.html">Privacy</a></li>
+          <li><a class="link link--gray" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Add your social links here, e.g. <a class="link link--gray" href="https://facebook.com/..." aria-label="Facebook"><i class="mdi mdi-facebook"></i></a> -->
+      <p class="footer-menu__social">
+        <a class="link link--gray" href="contact.html" aria-label="Email us"><i class="mdi mdi-email-outline" aria-hidden="true"></i></a>
+      </p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p>&copy; <span data-year>2026</span> NTmart. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* Blue gradient colour scheme */
+:root {
+  --accent: #2563eb;
+  --accent-dark: #1d4ed8;
+  --accent-soft: #e8efff;
+  --hero-bg: linear-gradient(135deg, #1e40af 0%, #2563eb 45%, #06b6d4 100%);
+}

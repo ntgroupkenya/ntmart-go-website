@@ -1,0 +1,7 @@
+/* Green colour scheme */
+:root {
+  --accent: #16a34a;
+  --accent-dark: #15803d;
+  --accent-soft: #e7f8ee;
+  --hero-bg: var(--accent);
+}
