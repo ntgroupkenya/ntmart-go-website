@@ -43,8 +43,10 @@ This repository also holds the NTmart Go marketing website: plain HTML, CSS and 
 | `faq.html` | Questions in expandable cards, with a sticky sidebar |
 | `about.html` | Story and values |
 | `privacy.html` | Privacy policy with a sticky sidebar |
-| `download.html` | How to get NTmart Go, requirements, setup steps |
+| `get.html` | How to get NTmart Go, requirements, setup steps |
 | `contact.html` | AJAX contact form with validation (posts to `mail.php`) |
+| `download.php` | Client downloads: email + download code gives a 30-minute download link |
+| `admin/` | Admin area: clients, installers and admin accounts (not linked from the site) |
 
 ### Before going live
 
@@ -52,6 +54,34 @@ This repository also holds the NTmart Go marketing website: plain HTML, CSS and 
 - **Privacy policy:** `privacy.html` is template text. Have it reviewed before publishing.
 - **Pricing:** Standard KES 15,000 and Complete KES 25,000 (adds M-Pesa, KRA, SMS), both lifetime; maintenance is 33% of the licence per year; deployment is quoted by location.
 - **Buying:** every "Get NTmart Go" button leads to the contact form (`contact.html?topic=purchase`). Point the button in `download.html` at an installer if you offer self-service downloads.
+
+### Admin area and client downloads
+
+`admin/` manages clients and `download.php` lets clients download the installer. Both need PHP 7.4+ with PDO SQLite (included in XAMPP and most hosts). Data is kept in a SQLite file, so there's no database to create.
+
+**First-time setup**
+
+1. Create `config.local.php` at the site root (it's ignored by git):
+   ```php
+   <?php
+   return [
+       'data_dir'  => 'C:/xampp/ntmart-go-data',   // a folder OUTSIDE the website
+       'setup_key' => 'choose-a-long-random-phrase',
+   ];
+   ```
+   If you leave out `data_dir`, data goes in the site's `data/` folder. `data/.htaccess` blocks it on Apache (XAMPP, cPanel), but a folder outside the website is safer, and the admin pages warn you until you move it.
+2. Open `/admin/`, enter the setup key, and choose your username and password.
+3. Remove `setup_key` from `config.local.php` (or set it to `''`). Add more admins from **Account**.
+
+**Day to day**
+
+- **Clients:** add each client with their plan, status, licence price, deployment quote, purchase date and notes. Maintenance is due a year after purchase unless you set a date, and **Renew maintenance for a year** moves it on. The list shows who is due in the next 30 days and who is overdue.
+- **Download codes:** on a client's page, **Create download code** shows a 12-character code once. Give it to the client with the email address on their record. They enter both on `download.php` and get a link that works for 30 minutes. **Remove download code** or unticking access stops it immediately. Each download is logged on the client's page.
+- **Installers:** upload the build on **Installers**, or copy a large file by FTP into the `releases/incoming` folder shown there and publish it. Only the published version is offered. Until one is published, clients see "not available yet".
+
+The admin area doesn't create or check NTmart licence keys; licensing stays with License Admin.
+
+Security: passwords and download codes are stored as bcrypt hashes; every admin form has a CSRF token; sign-in, setup and download attempts are rate-limited per IP; admin sessions use HttpOnly, SameSite=Strict cookies and end after 30 minutes idle.
 
 ### Colour schemes
 

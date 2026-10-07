@@ -513,3 +513,10 @@ textarea.form__input { min-height: 150px; resize: vertical; }
 .point .card__title { font-size: 1.1rem; }
 @media (max-width: 1199px) { .points { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 767px) { .points { grid-template-columns: minmax(0, 1fr); } }
+
+/* Client download page */
+.download-notes { margin-top: 16px; padding: 14px 16px; background: var(--bg-light); border: 1px solid var(--border); }
+.download-notes p { margin: 4px 0 0; color: var(--muted); }
+.download-meta { font-size: 0.85rem; color: var(--muted); margin: 0; }
+.download-meta code { word-break: break-all; }
+.download-code-input { font-size: 1.2rem; letter-spacing: 0.1em; text-transform: uppercase; }
