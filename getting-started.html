@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Started · NTmart POS Go</title>
+  <meta name="description" content="How to build, run and connect NTmart POS Go to your NTmart MySQL/MariaDB database.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main">
+        <a class="logo" href="index.html"><img src="assets/favicon.svg" alt="" width="32" height="32">NTmart <span>POS Go</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html#why">Why Go</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#roadmap">Roadmap</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="getting-started.html" aria-current="page">Get started</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+          <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html#why">Why Go</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#roadmap">Roadmap</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="getting-started.html">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-head">
+        <span class="eyebrow">Docs</span>
+        <h1>Get started with NTmart POS Go</h1>
+        <p>Build the app, connect it to an NTmart database and sign in with an existing NTmart user account.</p>
+      </div>
+
+      <div class="notice" role="note">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+        <p><strong>Preview edition.</strong> NTmart POS Go has no licence enforcement yet, so don't give it to clients. Use it on a test copy of the database, alongside the PHP edition, until Phase 8 ships.</p>
+      </div>
+
+      <div class="docs">
+        <nav class="toc" aria-label="On this page">
+          <span class="label">On this page</span>
+          <ul>
+            <li><a href="#requirements">Requirements</a></li>
+            <li><a href="#run">Build and run</a></li>
+            <li><a href="#connect">Connect to the database</a></li>
+            <li><a href="#side-by-side">Running next to PHP</a></li>
+            <li><a href="#developers">For developers</a></li>
+          </ul>
+        </nav>
+
+        <article>
+          <section id="requirements">
+            <h2>Requirements</h2>
+            <div class="table-wrap">
+              <table class="spec">
+                <thead><tr><th>Item</th><th>Details</th></tr></thead>
+                <tbody>
+                  <tr><td>Operating system</td><td>Windows (native Win32 app)</td></tr>
+                  <tr><td>Database</td><td>MySQL or MariaDB with the NTmart schema, the same database the PHP edition uses</td></tr>
+                  <tr><td>Account</td><td>An existing NTmart user account</td></tr>
+                  <tr><td>Receipt printer</td><td>Optional: an ESC/POS thermal printer, 80mm or 58mm</td></tr>
+                  <tr><td>To build from source</td><td>Go toolchain and PowerShell</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="run">
+            <h2>Build and run</h2>
+            <ol class="steps">
+              <li>
+                <strong>Build the app</strong>
+                <p>From the project folder, run the build script in PowerShell. It produces <code>NTmartPOS.exe</code>.</p>
+                <pre><code>.\build.ps1</code></pre>
+              </li>
+              <li>
+                <strong>Start it</strong>
+                <pre><code>.\NTmartPOS.exe</code></pre>
+              </li>
+              <li>
+                <strong>Sign in</strong>
+                <p>Use an existing NTmart user account. Passwords, lockout and the audit log work the same as in the PHP edition.</p>
+              </li>
+            </ol>
+          </section>
+
+          <section id="connect">
+            <h2>Connect to the database</h2>
+            <p>On first run the app asks for the database server. The defaults are:</p>
+            <div class="table-wrap">
+              <table class="spec">
+                <tbody>
+                  <tr><td>Server</td><td><code>localhost:3306</code></td></tr>
+                  <tr><td>User</td><td><code>root</code></td></tr>
+                  <tr><td>Database</td><td><code>ntmart</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>The details are saved to <code>%APPDATA%\NTmartGo\config.json</code>. To change them later, click <strong>Database…</strong> on the sign-in screen.</p>
+          </section>
+
+          <section id="side-by-side">
+            <h2>Running next to PHP</h2>
+            <p>The Go edition reads and writes the existing NTmart tables exactly as the PHP edition does, so both can run on the same database at the same time.</p>
+            <ul>
+              <li>No data migration: your data is already where the Go app expects it.</li>
+              <li>Schema changes stay with the PHP migrations, so the two editions always agree on table shapes.</li>
+              <li>Some features still run through PHP for now. For example, Go queues eTIMS submissions and the PHP edition transmits them.</li>
+              <li>Dates are stored as the shop's local time, just like the PHP edition.</li>
+            </ul>
+          </section>
+
+          <section id="developers">
+            <h2>For developers</h2>
+            <p>Unit tests run on their own. The integration tests also need a database. Point <code>NTMART_TEST_DSN</code> at a disposable copy such as <code>ntmart_godev</code>:</p>
+            <pre><code>$env:NTMART_TEST_DSN = 'root@tcp(localhost:3306)/ntmart_godev?parseTime=true&amp;charset=utf8mb4'
+go test ./...</code></pre>
+            <p><strong>The integration tests insert and delete rows.</strong> Never point them at a client database.</p>
+
+            <h3 style="margin-top:28px">Project layout</h3>
+            <div class="table-wrap">
+              <table class="spec">
+                <tbody>
+                  <tr><td><code>main.go</code></td><td>Startup: connect, sign in, main window, sign out</td></tr>
+                  <tr><td><code>internal/config</code></td><td>Database connection settings</td></tr>
+                  <tr><td><code>internal/store</code></td><td>Data access to the NTmart schema</td></tr>
+                  <tr><td><code>internal/escpos</code></td><td>ESC/POS receipt builder</td></tr>
+                  <tr><td><code>ui</code></td><td>Windows and dialogs (lxn/walk, native Win32 controls)</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 style="margin-top:28px">House rules</h3>
+            <ul>
+              <li><strong>Money is exact.</strong> Use <code>shopspring/decimal</code> for every amount and quantity, never <code>float64</code>.</li>
+              <li><strong>One shape for money queries.</strong> Read the <code>*_splits</code> tables, exclude contra settlements, and negate refunds rather than summing them. Copy the PHP query instead of re-deriving it.</li>
+              <li><strong>Use the database clock</strong> (<code>NOW()</code>) for anything compared against other timestamps.</li>
+              <li><strong>Multi-step writes go in one transaction</strong>, with deadlock retry and idempotency keys.</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html"><img src="assets/favicon.svg" alt="" width="32" height="32">NTmart <span>POS Go</span></a>
+          <p>A native Windows point of sale for NTmart shops, built on the database you already have.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#roadmap">Roadmap</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Docs</h4>
+          <ul>
+            <li><a href="#run">Build and run</a></li>
+            <li><a href="#requirements">Requirements</a></li>
+            <li><a href="#developers">For developers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span id="year">2026</span> NTmart. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

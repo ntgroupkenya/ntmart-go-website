@@ -1,30 +1,35 @@
-# NTmart POS (Go edition)
+# NTmart POS Go: website
 
-A native Windows rewrite of NTmart POS in Go. It runs on the **same MySQL/MariaDB database** as the current PHP version, so both can be used side by side while modules move over. See [PLAN.md](PLAN.md) for the roadmap.
+The product website for **NTmart POS Go**, the native Windows rewrite of NTmart POS. It runs on the same MySQL/MariaDB database as the PHP edition.
 
-**Status: preview (Phase 1).** It covers signing in and browsing the catalogue. It has no licence enforcement yet, so don't give it to clients.
+It is a static site: plain HTML, CSS and a little JavaScript, with no build step.
 
-## Run
+## Pages
 
-```powershell
-.\build.ps1
-.\NTmartPOS.exe
+- `index.html`: home page (overview, why Go, features, roadmap, FAQ)
+- `getting-started.html`: requirements, build and run, database connection, running next to PHP, developer notes
+- `assets/style.css`: styles, with light and dark themes
+- `assets/site.js`: theme toggle, mobile menu, copy buttons on code blocks
+- `assets/favicon.svg`: logo and favicon
+
+## Preview locally
+
+Open `index.html` in a browser, or serve the folder:
+
+```sh
+python3 -m http.server 8000
 ```
 
-On first run it asks for the database server (default: `localhost:3306`, user `root`, database `ntmart`). The details are saved to `%APPDATA%\NTmartGo\config.json`. Use **Database…** on the sign-in screen to change them. Sign in with an existing NTmart user account.
+Then visit <http://localhost:8000>.
 
-## Test
+## Publish
 
-```powershell
-$env:NTMART_TEST_DSN = 'root@tcp(localhost:3306)/ntmart_godev?parseTime=true&charset=utf8mb4'
-go test ./...
-```
+The site is static, so any static host works. For GitHub Pages, go to **Settings → Pages**, choose **Deploy from a branch**, and pick the branch with `/ (root)`. The `.nojekyll` file makes Pages serve the files as they are.
 
-The integration tests insert and delete rows, so point them only at a disposable copy, never at a client database. Without the variable, only the pure unit tests run.
+## Keeping it up to date
 
-## Layout
+The roadmap and feature lists come from the app's `PLAN.md`. Update the **Roadmap** section of `index.html` when a phase changes status.
 
-- `main.go`: startup (connect, sign in, main window, sign out)
-- `internal/config`: database connection settings
-- `internal/store`: data access to the NTmart schema (auth, settings, products)
-- `ui`: windows and dialogs (lxn/walk, native Win32 controls)
+Until Phase 8 (licensing and release) ships, the site must keep saying that the Go edition is a preview and must not be given to clients.
+
+The contact call-to-action at the bottom of `index.html` has a `TODO` for the real NTmart contact link.
