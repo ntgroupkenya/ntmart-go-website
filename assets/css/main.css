@@ -506,3 +506,10 @@ textarea.form__input { min-height: 150px; resize: vertical; }
 
 .col-offset-3 { margin-left: 25%; }
 @media (max-width: 989px) { .col-offset-3 { margin-left: 0; } }
+
+/* Row of short selling points (five across on wide screens) */
+.points { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; }
+.point { background: #fff; border: 1px solid var(--border); padding: 28px 24px; }
+.point .card__title { font-size: 1.1rem; }
+@media (max-width: 1199px) { .points { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 767px) { .points { grid-template-columns: minmax(0, 1fr); } }
