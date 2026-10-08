@@ -1,0 +1,11 @@
+/* NTmart Go colour scheme, taken from the NTmart Go logo:
+ * navy #00097B, royal blue #053799, cyan #00ACD7, orange #FD8800, green #78B90A. */
+:root {
+  --accent: #053799;
+  --accent-dark: #00097b;
+  --accent-soft: #e7eefb;
+  --hero-bg: linear-gradient(135deg, #00097b 0%, #053799 55%, #0a6fc2 85%, #00acd7 115%);
+  --brand-orange: #fd8800;
+  --brand-green: #78b90a;
+  --brand-cyan: #00acd7;
+}

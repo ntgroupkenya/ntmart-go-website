@@ -78,16 +78,17 @@ function admin_header(string $title, ?array $admin, string $active = ''): void
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <title><?= e($title) ?> | NTmart Go admin</title>
-  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/themes/blue-gradient.css">
+  <link rel="stylesheet" href="../assets/css/themes/ntgo.css">
   <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 <body class="admin">
 <div class="admin-bar">
   <div class="container admin-bar__inner">
-    <a class="menu__logo" href="index.php"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" fill="var(--accent)"/><path d="M11 28V12h3.2l8.6 10.6V12H26v16h-3.2l-8.6-10.6V28z" fill="#fff"/><circle cx="31" cy="27" r="3" fill="#fff"/></svg><span>NTmart<b>Go</b> admin</span></a>
+    <a class="menu__logo" href="index.php"><img src="../assets/img/logo.png" width="40" height="40" alt=""><span>NTmart<b>Go</b> admin</span></a>
     <?php if ($admin): ?>
     <nav class="admin-bar__nav" aria-label="Admin">
       <?php foreach ($nav as $key => [$href, $label]): ?>

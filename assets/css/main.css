@@ -18,6 +18,11 @@
   --hero-bg: var(--accent);
   --hero-text: #ffffff;
 
+  /* Logo colours, used for the stripe under the menu and the pricing ribbon */
+  --brand-orange: #fd8800;
+  --brand-green: #78b90a;
+  --brand-cyan: #00acd7;
+
   --text: #1f2937;
   --muted: #6b7280;
   --heading: #111827;
@@ -164,12 +169,16 @@ code { background: var(--bg-light); border: 1px solid var(--border); padding: 0.
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
+.menu::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 3px;
+  background: linear-gradient(90deg, var(--brand-orange) 0 33.3%, var(--brand-green) 33.3% 66.6%, var(--brand-cyan) 66.6% 100%);
+}
 .menu--scrolled { border-bottom-color: var(--border); box-shadow: 0 4px 20px rgba(17, 24, 39, 0.05); }
 
 .menu__inner { display: flex; align-items: center; gap: 24px; height: var(--menu-height); }
 
 .menu__logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--heading); font-weight: 800; font-size: 1.25rem; }
-.menu__logo svg { width: 36px; height: 36px; flex: none; }
+.menu__logo svg, .menu__logo img { width: 40px; height: 40px; flex: none; }
 .menu__logo b { color: var(--accent); }
 
 .menu__center-nav { flex: 1; display: flex; justify-content: center; }
@@ -404,7 +413,7 @@ code { background: var(--bg-light); border: 1px solid var(--border); padding: 0.
 .pricing .row { row-gap: 24px; }
 .pricing__card { display: flex; flex-direction: column; position: relative; }
 .pricing__card--featured { border: 2px solid var(--accent); box-shadow: var(--shadow-strong); }
-.pricing__card-ribbon { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--accent); color: #fff; }
+.pricing__card-ribbon { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--brand-orange); color: var(--accent-dark); }
 .pricing__card-title { margin-bottom: 6px; }
 .pricing__card-lead { color: var(--muted); font-size: 0.95rem; min-height: 3em; }
 .pricing__card-price { font-size: 2.6rem; font-weight: 800; color: var(--heading); line-height: 1; margin: 12px 0 6px; }

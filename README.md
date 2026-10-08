@@ -85,10 +85,10 @@ Security: passwords and download codes are stored as bcrypt hashes; every admin 
 
 ### Colour schemes
 
-There are 8 schemes in `assets/css/themes/`: `blue`, `green`, `red` and `violet`, each also as `-gradient`. Change the theme `<link>` in the `<head>` of every page, for example:
+The site uses `ntgo`, taken from the NTmart Go logo (navy, royal blue, cyan, orange and green). There are 8 more schemes in `assets/css/themes/`: `blue`, `green`, `red` and `violet`, each also as `-gradient`. Change the theme `<link>` in the `<head>` of every page, for example:
 
 ```powershell
-(Get-ChildItem *.html) | ForEach-Object { (Get-Content $_) -replace 'themes/blue-gradient.css', 'themes/green.css' | Set-Content $_ }
+(Get-ChildItem *.html) | ForEach-Object { (Get-Content $_) -replace 'themes/ntgo.css', 'themes/green.css' | Set-Content $_ }
 ```
 
 Every colour is a CSS variable at the top of `assets/css/main.css`, so a new scheme is just a small file that overrides `--accent`, `--accent-dark`, `--accent-soft` and `--hero-bg`.
