@@ -76,8 +76,8 @@
   <div class="background background--wave">
     <div class="container">
       <span class="badge badge--on-color">Features</span>
-      <h1 class="header-home__title">The everyday tools, done simply</h1>
-      <p class="header-home__description">Sales, invoices and quotes, stock and accounting in one plain, fast Windows program that works 100% offline.</p>
+      <h1 class="header-home__title">Everything a business runs on, done simply</h1>
+      <p class="header-home__description">Sales, invoicing, stock, buying, accounts and 28 reports in one plain, fast Windows program that works 100% offline.</p>
     </div>
   </div>
 </header>
@@ -86,9 +86,13 @@
   <div class="container">
     <ul class="topbar__list">
       <li><a class="link link--gray topbar__link active" href="#sales">Sales</a></li>
-      <li><a class="link link--gray topbar__link" href="#invoices">Invoices and quotes</a></li>
+      <li><a class="link link--gray topbar__link" href="#invoices">Invoicing</a></li>
       <li><a class="link link--gray topbar__link" href="#stock">Stock</a></li>
-      <li><a class="link link--gray topbar__link" href="#accounting">Accounting</a></li>
+      <li><a class="link link--gray topbar__link" href="#buying">Buying</a></li>
+      <li><a class="link link--gray topbar__link" href="#accounting">Accounts</a></li>
+      <li><a class="link link--gray topbar__link" href="#reports">Reports</a></li>
+      <li><a class="link link--gray topbar__link" href="#extras">Extras</a></li>
+      <li><a class="link link--gray topbar__link" href="#team">Team</a></li>
       <li><a class="link link--gray topbar__link" href="#integrations">M-Pesa, KRA, SMS</a></li>
       <li><a class="link link--gray topbar__link" href="#printers">Printers</a></li>
       <li><a class="link link--gray topbar__link" href="#setup">Easy setup</a></li>
@@ -104,18 +108,24 @@
     <div class="row row--center">
       <div class="col-6 col-t-12">
         <span class="section__eyebrow">Sales</span>
-        <h2>Serve customers without waiting</h2>
-        <p class="section__description">Search for a product, add it to the sale and finish. The screen shows only what the cashier needs.</p>
+        <h2>A fast till for busy counters</h2>
+        <p class="section__description">Scan a barcode or search by code, OEM number or name, and the item is on the sale. The screen shows only what the cashier needs.</p>
         <ul class="check-list" style="margin-top:24px">
-          <li>Quick product search</li>
-          <li>Each cashier signs in with their own account</li>
+          <li>Price lists for retail, wholesale or special customers</li>
+          <li>Discounts, with VAT worked out line by line</li>
+          <li>Split one payment across cash, card and other payment methods</li>
+          <li>Hold a sale, serve the next customer, then pick it up again</li>
+          <li>Sell loose quantities, such as half a kilo</li>
+          <li>Loyalty points for regular customers</li>
+          <li>Cash drawer sessions and a sales log with voids</li>
         </ul>
       </div>
       <div class="col-5 col-t-12 col-offset-1">
         <div class="illustration" aria-hidden="true">
-          <div class="illustration__row"><i class="mdi mdi-magnify"></i> Find the product</div>
-          <div class="illustration__row"><i class="mdi mdi-cart-outline"></i> Add to the sale</div>
-          <div class="illustration__row"><i class="mdi mdi-cash"></i> Take payment</div>
+          <div class="illustration__row"><i class="mdi mdi-barcode-scan"></i> Scan or search</div>
+          <div class="illustration__row"><i class="mdi mdi-cart-outline"></i> Build the sale</div>
+          <div class="illustration__row"><i class="mdi mdi-cash-multiple"></i> Take payment, split if needed</div>
+          <div class="illustration__row"><i class="mdi mdi-printer-pos-outline"></i> Print the receipt</div>
         </div>
       </div>
     </div>
@@ -124,14 +134,23 @@
   <section class="feature-row" id="invoices">
     <div class="row row--center">
       <div class="col-6 col-t-12">
-        <span class="section__eyebrow">Invoices and quotes</span>
-        <h2>Paperwork from the same system</h2>
-        <p class="section__description">Prepare quotes and invoices for your customers using the products and prices already in NTmart Go. There's no separate program and no retyping.</p>
+        <span class="section__eyebrow">Invoicing and clients</span>
+        <h2>Sell on account, and know who owes you</h2>
+        <p class="section__description">Quotes, invoices and client accounts in the same system as the till, using the same products and prices.</p>
+        <ul class="check-list" style="margin-top:24px">
+          <li>Quotations that turn into invoices in one step</li>
+          <li>Invoices paid now or on account, credit notes and dispatch</li>
+          <li>Client accounts with balances and statements</li>
+          <li>Payments received, matched to invoices, including cheques</li>
+          <li>Aged customer balances and a due list</li>
+        </ul>
       </div>
       <div class="col-5 col-t-12 col-offset-1">
         <div class="illustration" aria-hidden="true">
           <div class="illustration__row"><i class="mdi mdi-file-document-edit-outline"></i> Quote</div>
           <div class="illustration__row"><i class="mdi mdi-file-document-outline"></i> Invoice</div>
+          <div class="illustration__row"><i class="mdi mdi-account-cash-outline"></i> Payment</div>
+          <div class="illustration__row"><i class="mdi mdi-file-chart-outline"></i> Statement</div>
         </div>
       </div>
     </div>
@@ -141,13 +160,46 @@
     <div class="row row--center">
       <div class="col-6 col-t-12">
         <span class="section__eyebrow">Stock</span>
-        <h2>Know what's on the shelf</h2>
-        <p class="section__description">Manage your products and stock levels in one place, so you can see what's running low before it runs out.</p>
+        <h2>Stock that tells the truth</h2>
+        <p class="section__description">Every product, every movement and every adjustment, with the reason recorded.</p>
+        <ul class="check-list" style="margin-top:24px">
+          <li>Products with code, barcode, brand, category and shelf</li>
+          <li>Stock adjustments with reasons, and stock takes</li>
+          <li>Several locations or stores, with transfers between them</li>
+          <li>Stock groups and price lists</li>
+          <li>Expiring stock report, item movement timeline and edit history</li>
+        </ul>
       </div>
       <div class="col-5 col-t-12 col-offset-1">
         <div class="illustration" aria-hidden="true">
           <div class="illustration__row"><i class="mdi mdi-package-variant-closed"></i> Products</div>
-          <div class="illustration__row"><i class="mdi mdi-warehouse"></i> Stock levels</div>
+          <div class="illustration__row"><i class="mdi mdi-clipboard-check-outline"></i> Stock take</div>
+          <div class="illustration__row"><i class="mdi mdi-swap-horizontal"></i> Transfers</div>
+          <div class="illustration__row"><i class="mdi mdi-history"></i> Movement history</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-row" id="buying">
+    <div class="row row--center">
+      <div class="col-6 col-t-12">
+        <span class="section__eyebrow">Buying</span>
+        <h2>Restock without the paperwork</h2>
+        <p class="section__description">Record what you buy and what you owe, and the stock and accounts update themselves.</p>
+        <ul class="check-list" style="margin-top:24px">
+          <li>Purchases, paid now or on credit</li>
+          <li>Purchase orders (LPOs) that convert into purchases</li>
+          <li>Purchase returns that free up supplier credit</li>
+          <li>Suppliers with statements, payments and cheques</li>
+        </ul>
+      </div>
+      <div class="col-5 col-t-12 col-offset-1">
+        <div class="illustration" aria-hidden="true">
+          <div class="illustration__row"><i class="mdi mdi-clipboard-text-outline"></i> Purchase order</div>
+          <div class="illustration__row"><i class="mdi mdi-truck-delivery-outline"></i> Purchase</div>
+          <div class="illustration__row"><i class="mdi mdi-store-outline"></i> Supplier</div>
+          <div class="illustration__row"><i class="mdi mdi-cash-check"></i> Supplier payment</div>
         </div>
       </div>
     </div>
@@ -156,14 +208,143 @@
   <section class="feature-row" id="accounting">
     <div class="row row--center">
       <div class="col-6 col-t-12">
-        <span class="section__eyebrow">Accounting</span>
-        <h2>Keep track of the money</h2>
-        <p class="section__description">Your accounts live in the same system as your sales, so you always know where the business stands.</p>
+        <span class="section__eyebrow">Accounts</span>
+        <h2>Real double-entry accounts</h2>
+        <p class="section__description">Every sale, purchase and payment posts to the ledger automatically, so the books are always up to date.</p>
+        <ul class="check-list" style="margin-top:24px">
+          <li>Chart of accounts and journal, with manual entries</li>
+          <li>Expenses and incomes</li>
+          <li>Bank reconciliation</li>
+          <li>VAT withholding</li>
+          <li>Staff commission</li>
+          <li>Profit and loss, balance sheet and trial balance</li>
+        </ul>
       </div>
       <div class="col-5 col-t-12 col-offset-1">
         <div class="illustration" aria-hidden="true">
-          <div class="illustration__row"><i class="mdi mdi-calculator-variant-outline"></i> Accounts</div>
-          <div class="illustration__row"><i class="mdi mdi-chart-line"></i> How the business is doing</div>
+          <div class="illustration__row"><i class="mdi mdi-book-open-variant"></i> Ledger</div>
+          <div class="illustration__row"><i class="mdi mdi-bank-outline"></i> Bank reconciliation</div>
+          <div class="illustration__row"><i class="mdi mdi-chart-line"></i> Profit and loss</div>
+          <div class="illustration__row"><i class="mdi mdi-scale-balance"></i> Balance sheet</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-row" id="reports">
+    <span class="section__eyebrow">Reports</span>
+    <h2>28 reports, ready when you are</h2>
+    <p class="section__description" style="margin-bottom:32px">Pick a period and see the answer. Every report exports to CSV for Excel.</p>
+    <div class="row row--gap">
+        <div class="col-3 col-t-6 col-l-12">
+          <div class="card card--flat">
+            <h3 class="card__title">Sales</h3>
+            <ul class="report-list">
+              <li>POS income summary</li>
+              <li>All sales</li>
+              <li>Voided sales</li>
+              <li>Staff performance</li>
+              <li>Client performance</li>
+              <li>Top items</li>
+              <li>Loyalty points</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3 col-t-6 col-l-12">
+          <div class="card card--flat">
+            <h3 class="card__title">Money</h3>
+            <ul class="report-list">
+              <li>Money by payment method</li>
+              <li>Cash flow</li>
+              <li>Sales and purchase tax</li>
+              <li>Due list</li>
+              <li>Aged customer balances</li>
+              <li>Phone book</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3 col-t-6 col-l-12">
+          <div class="card card--flat">
+            <h3 class="card__title">Accounts</h3>
+            <ul class="report-list">
+              <li>Profit and loss</li>
+              <li>Income and expense detail</li>
+              <li>Trial balance</li>
+              <li>Balance sheet</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3 col-t-6 col-l-12">
+          <div class="card card--flat">
+            <h3 class="card__title">Stock</h3>
+            <ul class="report-list">
+              <li>Stock price list</li>
+              <li>Expiring stock</li>
+              <li>Stock inflows</li>
+              <li>Purchases in a period</li>
+              <li>Adjustment history</li>
+              <li>Stock take sessions</li>
+              <li>Warehouse stock</li>
+              <li>Transfer history</li>
+              <li>Item performance</li>
+              <li>Item movement timeline</li>
+              <li>Item edit history</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="feature-row" id="extras">
+    <span class="section__eyebrow">Extras</span>
+    <h2>Tools for your kind of business</h2>
+    <p class="section__description" style="margin-bottom:32px">Use the ones your trade needs and ignore the rest.</p>
+    <div class="points">
+      <div class="point">
+        <span class="card__icon"><i class="mdi mdi-calendar-clock" aria-hidden="true"></i></span>
+        <h3 class="card__title">Lay-bys</h3>
+        <p class="card__text">Customers pay in instalments and collect when it's paid.</p>
+      </div>
+      <div class="point">
+        <span class="card__icon"><i class="mdi mdi-wrench-outline" aria-hidden="true"></i></span>
+        <h3 class="card__title">Job cards</h3>
+        <p class="card__text">Track repair and service jobs, then invoice them.</p>
+      </div>
+      <div class="point">
+        <span class="card__icon"><i class="mdi mdi-barcode" aria-hidden="true"></i></span>
+        <h3 class="card__title">Serial numbers</h3>
+        <p class="card__text">Record serials and handle warranty claims.</p>
+      </div>
+      <div class="point">
+        <span class="card__icon"><i class="mdi mdi-handshake-outline" aria-hidden="true"></i></span>
+        <h3 class="card__title">Stock loans</h3>
+        <p class="card__text">Lend stock out and track what comes back.</p>
+      </div>
+      <div class="point">
+        <span class="card__icon"><i class="mdi mdi-chef-hat" aria-hidden="true"></i></span>
+        <h3 class="card__title">Recipes</h3>
+        <p class="card__text">Make products from ingredients and track production.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-row" id="team">
+    <div class="row row--center">
+      <div class="col-6 col-t-12">
+        <span class="section__eyebrow">Team and control</span>
+        <h2>Everyone signs in as themselves</h2>
+        <p class="section__description">Give each staff member their own account and decide what they can do.</p>
+        <ul class="check-list" style="margin-top:24px">
+          <li>Team accounts with a checklist of permissions</li>
+          <li>Activity log of who did what, and when</li>
+          <li>A dashboard with the day's numbers when you sign in</li>
+        </ul>
+      </div>
+      <div class="col-5 col-t-12 col-offset-1">
+        <div class="illustration" aria-hidden="true">
+          <div class="illustration__row"><i class="mdi mdi-account-group-outline"></i> Team accounts</div>
+          <div class="illustration__row"><i class="mdi mdi-shield-account-outline"></i> Permissions</div>
+          <div class="illustration__row"><i class="mdi mdi-text-box-search-outline"></i> Activity log</div>
         </div>
       </div>
     </div>

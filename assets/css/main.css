@@ -531,3 +531,13 @@ textarea.form__input { min-height: 150px; resize: vertical; }
 .download-meta { font-size: 0.85rem; color: var(--muted); margin: 0; }
 .download-meta code { word-break: break-all; }
 .download-code-input { font-size: 1.2rem; letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* Card that links somewhere (home page feature cards) */
+.card--link { display: block; text-decoration: none; color: inherit; transition: box-shadow 0.2s, border-color 0.2s; }
+.card--link:hover { border-color: var(--accent); box-shadow: var(--shadow-strong); }
+
+/* Report lists on the features page */
+.report-list { list-style: none; margin: 0; padding: 0; }
+.report-list li { padding: 7px 0; border-bottom: 1px solid var(--border); color: var(--muted); font-size: 0.95rem; }
+.report-list li:last-child { border-bottom: 0; }
+@media (min-width: 990px) { .feature-row:nth-child(even) .row.row--gap { flex-direction: row; } }
