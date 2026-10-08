@@ -88,7 +88,7 @@ function admin_header(string $title, ?array $admin, string $active = ''): void
 <body class="admin">
 <div class="admin-bar">
   <div class="container admin-bar__inner">
-    <a class="menu__logo" href="index.php"><img src="../assets/img/logo.png" width="40" height="40" alt=""><span>NTmart<b>Go</b> admin</span></a>
+    <a class="menu__logo" href="index.php"><img src="../assets/img/logo-wordmark.png" width="187" height="40" alt="NTmart Go"><span class="menu__logo-tag">Admin</span></a>
     <?php if ($admin): ?>
     <nav class="admin-bar__nav" aria-label="Admin">
       <?php foreach ($nav as $key => [$href, $label]): ?>
