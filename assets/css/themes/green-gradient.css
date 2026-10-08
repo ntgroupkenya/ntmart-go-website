@@ -1,0 +1,7 @@
+/* Green gradient colour scheme */
+:root {
+  --accent: #16a34a;
+  --accent-dark: #15803d;
+  --accent-soft: #e7f8ee;
+  --hero-bg: linear-gradient(135deg, #166534 0%, #16a34a 50%, #84cc16 100%);
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | NTmart Go</title>
+  <meta name="description" content="Contact the NTmart team to buy NTmart Go or get help.">
+  <meta name="author" content="DECODE IT Solutions">
+  <meta property="og:title" content="Contact | NTmart Go">
+  <meta property="og:description" content="Contact the NTmart team to buy NTmart Go or get help.">
+  <meta name="theme-color" content="#00097b">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta property="og:image" content="assets/img/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Colour scheme: ntgo (from the logo), or blue, green, red, violet, each also as -gradient -->
+  <link rel="stylesheet" href="assets/css/themes/ntgo.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="menu">
+  <div class="container menu__inner">
+    <a class="menu__logo" href="index.html" aria-label="NTmart Go home"><img src="assets/img/logo-wordmark.png" width="187" height="40" alt="NTmart Go"></a>
+
+    <nav class="menu__center-nav d-t-none" aria-label="Main">
+      <ul>
+        <li class="menu__dropdown">
+          <button class="link link--gray menu__dropdown-btn" type="button" aria-expanded="false">Product <i class="mdi mdi-chevron-down" aria-hidden="true"></i></button>
+          <div class="menu__dropdown-content">
+            <a class="link link--gray" href="index.html">Overview</a>
+            <a class="link link--gray" href="features.html">Features</a>
+            <a class="link link--gray" href="get.html">Get NTmart Go</a>
+            <a class="link link--gray" href="download.php">Download (clients)</a>
+          </div>
+        </li>
+          <li><a class="link link--gray" href="pricing.html">Pricing</a></li>
+          <li><a class="link link--gray" href="faq.html">FAQ</a></li>
+          <li><a class="link link--gray" href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu__right-nav d-t-none">
+      <a class="link link--gray link--active" href="contact.html" aria-current="page">Contact</a>
+      <a class="site-btn site-btn--accent site-btn--small" href="pricing.html">Get NTmart Go</a>
+    </div>
+
+    <button class="menu__burger d-none d-t-flex" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"><i class="mdi mdi-menu" aria-hidden="true"></i></button>
+  </div>
+
+  <nav class="mobile-menu d-none d-t-block" id="mobile-menu" aria-label="Mobile" hidden>
+    <div class="container">
+      <ul class="mobile-menu__ul">
+        <li class="mobile-menu__li">
+          <button class="mobile-menu__collapse link link--dark-gray" type="button" aria-expanded="false" aria-controls="mobile-product">Product <i class="mdi mdi-chevron-down" aria-hidden="true"></i></button>
+          <ul class="mobile-menu__ul mobile-menu__ul--collapsed" id="mobile-product" hidden>
+            <li class="mobile-menu__li"><a class="link link--gray" href="index.html">Overview</a></li>
+            <li class="mobile-menu__li"><a class="link link--gray" href="features.html">Features</a></li>
+            <li class="mobile-menu__li"><a class="link link--gray" href="get.html">Get NTmart Go</a></li>
+            <li class="mobile-menu__li"><a class="link link--gray" href="download.php">Download (clients)</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray" href="pricing.html">Pricing</a></li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray" href="faq.html">FAQ</a></li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray" href="about.html">About</a></li>
+        <li class="mobile-menu__li"><a class="link link--dark-gray link--active" href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="mobile-menu__btn"><a class="site-btn site-btn--accent site-btn--block" href="pricing.html">Get NTmart Go</a></div>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+<header class="header-home header-home--center-content header-home--small">
+  <div class="background background--wave background--wave-light">
+    <div class="container">
+      <span class="badge badge--on-color">Contact</span>
+      <h1 class="header-home__title">Talk to the NTmart team</h1>
+      <p class="header-home__description">Buy NTmart Go, ask a question or get help. Fill in the form, or reach us directly on WhatsApp, phone or email.</p>
+    </div>
+  </div>
+</header>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="row row--gap">
+      <div class="col-8 col-t-12">
+        <div class="card">
+          <form class="form" action="mail.php" method="post" data-ajax>
+            <div class="row">
+              <div class="col-6 col-l-12 form__group">
+                <label class="form__label" for="name">Your name</label>
+                <input class="form__input" id="name" name="name" type="text" autocomplete="name" maxlength="100" required>
+                <p class="form__error">Please enter your name.</p>
+              </div>
+              <div class="col-6 col-l-12 form__group">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" id="email" name="email" type="email" autocomplete="email" maxlength="150" required>
+                <p class="form__error">Please enter a valid email address.</p>
+              </div>
+              <div class="col-6 col-l-12 form__group">
+                <label class="form__label" for="phone">Phone <small>(optional)</small></label>
+                <input class="form__input" id="phone" name="phone" type="tel" autocomplete="tel" maxlength="20" pattern="[0-9+\(\)\s\-]{7,20}" placeholder="+254 7xx xxx xxx">
+                <p class="form__error">Please enter a valid phone number.</p>
+              </div>
+              <div class="col-6 col-l-12 form__group">
+                <label class="form__label" for="business">Business name <small>(optional)</small></label>
+                <input class="form__input" id="business" name="business" type="text" autocomplete="organization" maxlength="150">
+              </div>
+              <div class="col-12 form__group">
+                <label class="form__label" for="topic">What can we help with?</label>
+                <select class="form__input" id="topic" name="topic" data-prefill>
+                  <option value="general">General question</option>
+                  <option value="purchase">Buy NTmart Go</option>
+                  <option value="support">Support</option>
+                </select>
+              </div>
+              <div class="col-12 form__group">
+                <label class="form__label" for="message">Message</label>
+                <textarea class="form__input" id="message" name="message" minlength="10" maxlength="5000" required></textarea>
+                <p class="form__error">Please write a message of at least 10 characters.</p>
+              </div>
+              <div class="form__hp" aria-hidden="true">
+                <label for="website">Leave this empty</label>
+                <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+              </div>
+              <div class="col-12 form__group">
+                <label class="checkbox-btn">
+                  <input class="checkbox-btn__checkbox" type="checkbox" name="consent" required>
+                  <span class="checkbox-btn__checkbox-custom"><i class="mdi mdi-check" aria-hidden="true"></i></span>
+                  <span class="checkbox-btn__label">I agree to the <a href="privacy.html" target="_blank" class="link link--accent-bold">privacy policy</a></span>
+                </label>
+                <p class="form__error">Please agree to the privacy policy.</p>
+              </div>
+              <div class="col-12">
+                <button class="site-btn site-btn--accent" type="submit">Send message</button>
+                <p class="form__status" role="status" aria-live="polite" hidden></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-4 col-t-12">
+        <div class="card card--flat">
+          <div class="contact-item">
+            <span class="card__icon"><i class="mdi mdi-whatsapp" aria-hidden="true"></i></span>
+            <div><h4>WhatsApp</h4><p><a class="link link--accent" href="https://wa.me/254711294124?text=Hi%2C%20I%27m%20interested%20in%20NTmart%20Go." target="_blank" rel="noopener">+254 711 294 124</a></p></div>
+          </div>
+          <div class="contact-item">
+            <span class="card__icon"><i class="mdi mdi-phone-outline" aria-hidden="true"></i></span>
+            <div><h4>Phone</h4><p><a class="link link--accent" href="tel:+254711294124">+254 (0) 711 294 124</a></p></div>
+          </div>
+          <div class="contact-item">
+            <span class="card__icon"><i class="mdi mdi-email-outline" aria-hidden="true"></i></span>
+            <div><h4>Email</h4><p><a class="link link--accent" href="mailto:ntmart@ntgroup.co.ke">ntmart@ntgroup.co.ke</a></p></div>
+          </div>
+          <div class="contact-item">
+            <span class="card__icon"><i class="mdi mdi-facebook" aria-hidden="true"></i></span>
+            <div><h4>Facebook</h4><p><a class="link link--accent" href="https://www.facebook.com/ntmartpos/" target="_blank" rel="noopener">facebook.com/ntmartpos</a></p></div>
+          </div>
+          <div class="contact-item" style="margin-bottom:0">
+            <span class="card__icon"><i class="mdi mdi-map-marker-outline" aria-hidden="true"></i></span>
+            <div><h4>Office</h4><p>DECODE IT Solutions, Nairobi, Kenya</p></div>
+          </div>
+          <a class="site-btn site-btn--accent site-btn--block" style="margin-top:24px" href="https://wa.me/254711294124?text=Hi%2C%20I%27m%20interested%20in%20NTmart%20Go." target="_blank" rel="noopener"><i class="mdi mdi-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-menu">
+    <div class="footer-menu__inner">
+      <a class="menu__logo menu__logo--footer" href="index.html" aria-label="NTmart Go home"><img src="assets/img/logo-wordmark.png" width="187" height="40" alt="NTmart Go"></a>
+      <nav class="footer-menu__nav" aria-label="Footer">
+        <ul>
+          <li><a class="link link--gray" href="features.html">Features</a></li>
+          <li><a class="link link--gray" href="pricing.html">Pricing</a></li>
+          <li><a class="link link--gray" href="get.html">Get NTmart Go</a></li>
+          <li><a class="link link--gray" href="download.php">Download</a></li>
+          <li><a class="link link--gray" href="about.html">About</a></li>
+          <li><a class="link link--gray" href="faq.html">FAQ</a></li>
+          <li><a class="link link--gray" href="privacy.html">Privacy</a></li>
+          <li><a class="link link--gray" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="footer-menu__social">
+        <a class="link link--gray" href="https://wa.me/254711294124?text=Hi%2C%20I%27m%20interested%20in%20NTmart%20Go." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="mdi mdi-whatsapp" aria-hidden="true"></i></a>
+        <a class="link link--gray" href="mailto:ntmart@ntgroup.co.ke" aria-label="Email"><i class="mdi mdi-email-outline" aria-hidden="true"></i></a>
+        <a class="link link--gray" href="https://www.facebook.com/ntmartpos/" target="_blank" rel="noopener" aria-label="Facebook"><i class="mdi mdi-facebook" aria-hidden="true"></i></a>
+      </p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p>+254 (0) 711 294 124 &middot; <a class="link link--gray" href="mailto:ntmart@ntgroup.co.ke">ntmart@ntgroup.co.ke</a></p>
+      <p>&copy; <span data-year>2026</span> <a class="link link--gray" href="https://www.ntgroup.co.ke/decode/">DECODE IT Solutions</a>, Nairobi. Part of <a class="link link--gray" href="https://www.ntgroup.co.ke/">NT Group</a> by Nemsey Traders Ltd.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

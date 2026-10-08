@@ -1,0 +1,7 @@
+/* Red gradient colour scheme */
+:root {
+  --accent: #dc2626;
+  --accent-dark: #b91c1c;
+  --accent-soft: #fdecec;
+  --hero-bg: linear-gradient(135deg, #991b1b 0%, #dc2626 50%, #f97316 100%);
+}

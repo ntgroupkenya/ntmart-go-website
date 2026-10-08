@@ -1,0 +1,7 @@
+/* Violet colour scheme */
+:root {
+  --accent: #7c3aed;
+  --accent-dark: #6d28d9;
+  --accent-soft: #f1eafe;
+  --hero-bg: var(--accent);
+}
