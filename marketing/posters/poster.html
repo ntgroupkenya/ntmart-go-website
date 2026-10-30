@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NTmart Posters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ===== EDIT PRICES & CONTACTS IN THE <script> BLOCK AT THE BOTTOM ===== */
+  :root{
+    --ink:#0b1b33; --ink-2:#132a4d; --paper:#ffffff;
+    --go:#ff7a1a; --pos:#19b37d; --muted:#9fb0c8; --line:rgba(255,255,255,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#e6e9ef;font-family:"Plus Jakarta Sans",system-ui,sans-serif;display:flex;flex-wrap:wrap;gap:40px;padding:40px;align-items:flex-start}
+  .poster{width:1080px;position:relative;overflow:hidden;color:var(--paper);
+    background:radial-gradient(1200px 700px at 85% -10%, #1f4a8a 0%, transparent 60%),
+               radial-gradient(900px 600px at -10% 110%, #0f3d3a 0%, transparent 60%), var(--ink);
+    display:flex;flex-direction:column;padding:72px}
+  .sq{height:1080px} .story{height:1920px;padding:110px 80px} .portrait{height:1440px;padding:84px}
+  .brand{display:flex;align-items:center;gap:18px;font-weight:800;font-size:34px;letter-spacing:-.5px}
+  .mark{width:58px;height:58px;border-radius:16px;background:linear-gradient(135deg,var(--go),#ffb347);display:grid;place-items:center;font-size:30px;color:var(--ink)}
+  .brand small{display:block;font-size:17px;font-weight:500;color:var(--muted);letter-spacing:0}
+  h1{font-weight:800;letter-spacing:-2.5px;line-height:1.02;margin-top:44px}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--go),#ffc069);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:#c9d5e6;font-weight:500;margin-top:20px;line-height:1.4}
+  .cards{display:grid;gap:28px;margin-top:auto}
+  .card{background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:30px;padding:36px;position:relative}
+  .card::before{content:"";position:absolute;inset:0 auto 0 0;width:8px;border-radius:30px 0 0 30px;background:var(--accent)}
+  .card.go{--accent:var(--go)} .card.pos{--accent:var(--pos)}
+  .tag{display:inline-block;font-size:17px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ink);background:var(--accent);padding:7px 14px;border-radius:999px}
+  .card h2{font-size:42px;font-weight:800;letter-spacing:-1px;margin-top:16px}
+  .card p{color:#c9d5e6;font-size:21px;margin-top:6px;line-height:1.35}
+  .price{margin-top:22px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .price .cur{font-size:24px;font-weight:700;color:var(--accent)}
+  .price .amt{font-size:64px;font-weight:800;letter-spacing:-2px;line-height:1}
+  .price .per{font-size:21px;color:var(--muted);font-weight:500}
+  .price .tbd{outline:3px dashed #ff4d4d;outline-offset:6px;border-radius:6px}
+  ul{list-style:none;margin-top:20px;display:grid;gap:10px}
+  li{font-size:20px;color:#e3eaf4;padding-left:34px;position:relative}
+  li::before{content:"";position:absolute;left:0;top:5px;width:20px;height:20px;border-radius:50%;background:var(--accent);
+    -webkit-mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10"/></svg>');}
+  li::after{content:"";position:absolute;left:6px;top:9px;width:8px;height:5px;border:3px solid var(--ink);border-top:0;border-right:0;transform:rotate(-45deg)}
+  .cta{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
+  .cta .btn{background:var(--go);color:var(--ink);font-weight:800;font-size:26px;padding:20px 32px;border-radius:999px;white-space:nowrap}
+  .cta .contact{font-size:22px;color:#e3eaf4;font-weight:700;line-height:1.45}
+  .cta .contact span{display:block;color:var(--muted);font-weight:500;font-size:18px}
+
+  /* layout variants */
+  .sq h1{font-size:76px;margin-top:34px} .sq .sub{font-size:24px;margin-top:14px}
+  .sq .cards{grid-template-columns:1fr 1fr;gap:24px} .sq .card{padding:30px} .sq .card h2{font-size:36px}
+  .sq .card p{font-size:19px} .sq .price .amt{font-size:54px} .sq ul{display:none}
+  .sq .cta{margin-top:30px;padding-top:24px} .sq .cta .btn{font-size:22px;padding:16px 26px}
+
+  .portrait h1{font-size:92px} .portrait .sub{font-size:28px}
+  .portrait .cards{grid-template-columns:1fr 1fr} .portrait li{font-size:18px}
+  .portrait ul{gap:8px}
+
+  .story h1{font-size:118px;margin-top:80px} .story .sub{font-size:34px;margin-top:28px}
+  .story .cards{gap:34px;padding-top:50px} .story .card{padding:44px} .story .card h2{font-size:50px}
+  .story .price .amt{font-size:78px} .story li{font-size:23px}
+  .story ul{grid-template-columns:1fr 1fr}
+  .story .cta{flex-direction:column;align-items:stretch;text-align:center;margin-top:50px}
+  .story .cta .btn{font-size:32px;padding:26px}
+  .story .cta .contact{font-size:28px} .story .cta .contact span{font-size:22px}
+</style>
+</head>
+<body>
+<template id="tpl">
+  <div class="brand"><div class="mark">N</div><div>NTmart<small>Point of sale for Kenyan businesses</small></div></div>
+  <h1>Sell faster.<br>Count <em>every shilling.</em></h1>
+  <p class="sub">Two ways to run your till — pick the one that fits your shop.</p>
+  <div class="cards">
+    <div class="card go">
+      <span class="tag">New</span>
+      <h2>NTmart Go</h2>
+      <p>Native Windows POS. Fast, light, built for the counter.</p>
+      <div class="price"><span class="cur" data-k="currency"></span><span class="amt" data-k="goPrice"></span><span class="per" data-k="goPeriod"></span></div>
+      <ul><li>Native Windows app</li><li>Quick product search</li><li>Same data as NTmart POS</li><li>Use both side by side</li></ul>
+    </div>
+    <div class="card pos">
+      <span class="tag">Classic</span>
+      <h2>NTmart POS</h2>
+      <p>The full NTmart system trusted by shops today.</p>
+      <div class="price"><span class="cur" data-k="currency"></span><span class="amt" data-k="posPrice"></span><span class="per" data-k="posPeriod"></span></div>
+      <ul><li>Sales &amp; receipts</li><li>Stock control</li><li>User accounts</li><li>Upgrade to Go anytime</li></ul>
+    </div>
+  </div>
+  <div class="cta">
+    <div class="contact"><span>Call / WhatsApp</span><b data-k="phone"></b> · <b data-k="web"></b></div>
+    <div class="btn">Book a free demo</div>
+  </div>
+</template>
+
+<div class="poster sq" id="p-1x1"></div>
+<div class="poster portrait" id="p-3x4"></div>
+<div class="poster story" id="p-9x16"></div>
+
+<script>
+  // ===== EDIT HERE ===== Fill in the real prices from ntgroup.co.ke. Empty values show as a red-dashed "TBD".
+  const DATA = {
+    currency: "KES",
+    goPrice:  "",  goPeriod:  "",   // e.g. "1,500", "/ month"
+    posPrice: "",  posPeriod: "",   // e.g. "15,000", "one-time"
+    phone:    "",                   // e.g. "07XX XXX XXX"
+    web:      "ntgroup.co.ke"
+  };
+  const tpl = document.getElementById("tpl");
+  document.querySelectorAll(".poster").forEach(p => {
+    p.appendChild(tpl.content.cloneNode(true));
+    p.querySelectorAll("[data-k]").forEach(el => {
+      const v = DATA[el.dataset.k];
+      el.textContent = v || (/(Price|phone)/.test(el.dataset.k) ? "TBD" : "");
+      if (!v && /(Price|phone)/.test(el.dataset.k)) el.classList.add("tbd");
+    });
+  });
+</script>
+</body>
+</html>
